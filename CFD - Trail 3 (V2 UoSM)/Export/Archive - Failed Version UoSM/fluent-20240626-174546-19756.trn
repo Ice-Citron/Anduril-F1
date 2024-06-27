@@ -1,0 +1,175 @@
+Auto-Transcript Start Time:  17:45:46, 26 Jun 2024 Malay Peninsula Standard Time 
+Current Directory: "C:\Users\USER\Documents\Project CES\Anduril F1\Ansys Fluent CFD\CFD - Trail 3 (V2 UoSM)\Export"
+
+              Welcome to ANSYS Fluent 2024 R1
+
+              Copyright 1987-2024 ANSYS, Inc. All Rights Reserved.
+              Unauthorized use, distribution or duplication is prohibited.
+              This product is subject to U.S. laws governing export and re-export.
+              For full Legal Notice, see documentation.
+
+Build Time: Nov 22 2023 10:31:01 EST  Build Id: 10184  
+ 
+Connected License Server List:	<Shared_Web_License_Server>
+
+     --------------------------------------------------------------
+     This is a student version of ANSYS FLUENT. Usage of this product
+     license is limited to the terms and conditions specified in your ANSYS
+     license form, additional terms section.
+     --------------------------------------------------------------
+Host spawning Node 0 on machine "StarForge-FS" (win64).
+
+----------------------------------------------------------------------------------------
+ID    Hostname      Core   O.S.         PID    Vendor                                  
+----------------------------------------------------------------------------------------
+n15   StarForge-FS  16/16  Windows-x64  13144  13th Gen Intel(R) Core(TM) i7-13620H    
+n14   StarForge-FS  15/16  Windows-x64  15280  13th Gen Intel(R) Core(TM) i7-13620H    
+n13   StarForge-FS  14/16  Windows-x64  1496   13th Gen Intel(R) Core(TM) i7-13620H    
+n12   StarForge-FS  13/16  Windows-x64  364    13th Gen Intel(R) Core(TM) i7-13620H    
+n11   StarForge-FS  12/16  Windows-x64  10312  13th Gen Intel(R) Core(TM) i7-13620H    
+n10   StarForge-FS  11/16  Windows-x64  16896  13th Gen Intel(R) Core(TM) i7-13620H    
+n9    StarForge-FS  10/16  Windows-x64  12180  13th Gen Intel(R) Core(TM) i7-13620H    
+n8    StarForge-FS  9/16   Windows-x64  12852  13th Gen Intel(R) Core(TM) i7-13620H    
+n7    StarForge-FS  8/16   Windows-x64  7548   13th Gen Intel(R) Core(TM) i7-13620H    
+n6    StarForge-FS  7/16   Windows-x64  13988  13th Gen Intel(R) Core(TM) i7-13620H    
+n5    StarForge-FS  6/16   Windows-x64  14524  13th Gen Intel(R) Core(TM) i7-13620H    
+n4    StarForge-FS  5/16   Windows-x64  21152  13th Gen Intel(R) Core(TM) i7-13620H    
+n3    StarForge-FS  4/16   Windows-x64  3532   13th Gen Intel(R) Core(TM) i7-13620H    
+n2    StarForge-FS  3/16   Windows-x64  12324  13th Gen Intel(R) Core(TM) i7-13620H    
+n1    StarForge-FS  2/16   Windows-x64  14684  13th Gen Intel(R) Core(TM) i7-13620H    
+n0*   StarForge-FS  1/16   Windows-x64  21408  13th Gen Intel(R) Core(TM) i7-13620H    
+host  StarForge-FS         Windows-x64  17044  13th Gen Intel(R) Core(TM) i7-13620H    
+
+MPI Option Selected: intel
+Selected system interconnect: default
+----------------------------------------------------------------------------------------
+
+Cleanup script file is C:\\Users\\USER\\Documents\\Project CES\\Anduril F1\\Ansys Fluent CFD\\CFD - Trail 3 (V2 UoSM)\\Export\\cleanup-fluent-StarForge-FS-17044.bat
+(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)
+Reading "C:/Users/USER/Documents/Project CES/Anduril F1/Ansys Fluent CFD/CFD - Trail 3 (V2 UoSM)/Export/V2-UoSM.msh.h5" ...
+3D mesh
+nodes: 16717
+edges: 1400
+faces: 30638 
+cells: 0 
+reading 3 node zones
+reading 25 edge zones
+reading 14 face zones
+generating pointers...done.
+extracting boundary entities...
+ 16717 boundary nodes.
+ 30638 boundary faces.
+ 14 boundary face zones.
+done.
+analyzing boundary connectivity...done.
+
+Meshing> (newline)
+
+
+Meshing> (cx-gui-do cx-activate-item "Key Behavioral Changes*PanelButtons*PushButton1(OK)")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-3080.7 -13215.8 7519.71) '(0 0 0) '(0.633627 0.283342 0.534077) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-5456.36 -11396.5 -3955.62) '(0 0 0) '(0.11766 -0.271575 0.614061) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-853.712 -2865.5 -3197.92) '(0 0 0) '(0.00233087 -0.152564 0.136068) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(1729.26 -1517.75 -3493.34) '(0 0 0) '(0.0286489 -0.278645 0.13099) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(4659.57 1703.09 -3588.71) '(0 0 0) '(0.0686103 -0.128044 0.00752664) 0 0)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-set-camera '(1383.92 -21.6474 18.926) '(-20.1603 -21.6474 18.926) '(-7.45058e-09 0.999999 -7.85221e-08) 397.134 397.134 "perspective")
+
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(dolly-camera 0 49.3754 0)
+(cx-use-window-id 51)
+(dolly-camera 0 -39.041 0)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-43.494 -251.472 157.441) '(0 0 0) '(-0.154557 0.00994906 -0.0120654) 0 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(dolly-camera 25.3531 -69.5044 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-22.1052 -52.4514 39.9023) '(0 0 0) '(-0.038737 0.0112833 -0.00702214) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-104.344 -146.094 66.2356) '(0 0 0) '(-0.16708 0.0853145 -0.0542071) 0 0)
+deleting face-zone local-refinement-front-wheel (id 49) 
+deleting node-zone boundary-node-52 (id 52) 
+deleting node-zone boundary-node-53 (id 53) 
+removed 792 faces.
+Deleting local-refinement-front-wheel-boi
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-181.095 -82.9019 -27.1796) '(0 0 0) '(-0.003993 0.126672 -0.0251229) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(99.5381 42.5403 16.3322) '(0 0 0) '(0.0956999 -0.0484956 0.0437764) 0 0)
+(cx-use-window-id 51)
+(handle-key "??")
+(cx-use-window-id 51)
+(cx-set-camera '(1691.68 -830.971 777.218) '(32.0685 -328.299 207.342) '(-0.321291 0.0127227 0.946895) 516.274 516.274 "perspective")
+
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-176.047 -322.636 100.682) '(0 0 0) '(-0.0731684 0.0242129 -0.0287217) 0 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(dolly-camera 134.018 -98.6267 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-17.738 84.8519 108.849) '(0 0 0) '(-0.199941 -0.251579 -0.143172) 0 0)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(dolly-camera 0 121.409 0)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-17.3287 -152.831 48.6268) '(0 0 0) '(-0.0662206 -0.000349959 -0.00219369) 0 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(dolly-camera 18.2559 -80.95 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-303.414 -445.893 93.8766) '(0 0 0) '(-0.145202 0.0803254 -0.0236866) 0 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(dolly-camera 133.733 -88.1298 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(dolly-camera 30.6651 -34.9714 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-464.641 -144.601 -42.3218) '(0 0 0) '(-0.00605683 0.0603149 -0.00818521) 0 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(dolly-camera 89.1574 7.47296 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-187.062 29.6044 -27.6887) '(0 0 0) '(0.00194046 0.0243957 -0.00342214) 0 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(dolly-camera 36.3422 11.1013 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-222.018 256.392 -12.2725) '(0 0 0) '(0.219851 0.169069 -0.0198563) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(10.1442 -36.9123 22.6245) '(0 0 0) '(0.022314 0.0217453 -0.0083499) 0 0)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-use-window-id 51)

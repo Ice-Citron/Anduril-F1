@@ -1,0 +1,572 @@
+{
+    "workflow": {
+        "version": "24.1",
+        "ROOT": {
+            "TaskObject:TaskObject1": {
+                "Arguments": {
+                    "FileName": "C:\/Users\/USER\/Documents\/Project CES\/Anduril F1\/Ansys Fluent CFD\/CFD - Trail 3 (V2 UoSM)\/Export\/V2-UoSM.pmdb",
+                    "ImportCadPreferences": {
+                        "MaxFacetLength": "0"
+                    },
+                    "LengthUnit": "mm",
+                    "NumParts": "1"
+                },
+                "CommandName": "ImportGeometry",
+                "Errors": "__________None",
+                "InactiveTaskList": "__________None",
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskList": "__________None",
+                "TaskType": "Simple",
+                "Warnings": "__________None",
+                "_name_": "Import Geometry"
+            },
+            "TaskObject:TaskObject2": {
+                "Arguments": {
+                    "AddChild": "yes"
+                },
+                "CommandName": "AddLocalSizingWTM",
+                "Errors": "__________None",
+                "InactiveTaskList": "__________None",
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskList": [
+                    "TaskObject19",
+                    "TaskObject20",
+                    "TaskObject21"
+                ],
+                "TaskType": "Compound",
+                "Warnings": "__________None",
+                "_name_": "Add Local Sizing"
+            },
+            "TaskObject:TaskObject3": {
+                "Arguments": {
+                    "CFDSurfaceMeshControls": {
+                        "MaxSize": "40",
+                        "MinSize": "0.29999999999999999",
+                        "ScopeProximityTo": "faces-and-edges"
+                    },
+                    "ExecuteShareTopology": "No",
+                    "OriginalZones": [
+                        "inlet",
+                        "outlet",
+                        "top-wall",
+                        "side-wall",
+                        "ground",
+                        "symmetry",
+                        "front-wing",
+                        "front-wheel-patch",
+                        "rear-wheel-patch",
+                        "front-msr",
+                        "rear-msr",
+                        "rear-wing",
+                        "chasis"
+                    ]
+                },
+                "CommandName": "GenerateTheSurfaceMeshWTM",
+                "Errors": "__________None",
+                "InactiveTaskList": "__________None",
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskList": "__________None",
+                "TaskType": "Simple",
+                "Warnings": "__________None",
+                "_name_": "Generate the Surface Mesh"
+            },
+            "TaskObject:TaskObject4": {
+                "Arguments": "",
+                "CommandName": "GeometrySetup",
+                "Errors": "__________None",
+                "InactiveTaskList": [
+                    "TaskObject5",
+                    "TaskObject7"
+                ],
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskList": [
+                    "TaskObject6",
+                    "TaskObject8"
+                ],
+                "TaskType": "Conditional",
+                "Warnings": "__________None",
+                "_name_": "Describe Geometry"
+            },
+            "TaskObject:TaskObject5": {
+                "Arguments": "",
+                "CommandName": "ShareTopology",
+                "Errors": "__________None",
+                "InactiveTaskList": "__________None",
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskList": "__________None",
+                "TaskType": "Simple",
+                "Warnings": "__________None",
+                "_name_": "Apply Share Topology"
+            },
+            "TaskObject:TaskObject6": {
+                "Arguments": "",
+                "CommandName": "Capping",
+                "Errors": "__________None",
+                "InactiveTaskList": "__________None",
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskList": "__________None",
+                "TaskType": "Compound",
+                "Warnings": "__________None",
+                "_name_": "Enclose Fluid Regions (Capping)"
+            },
+            "TaskObject:TaskObject7": {
+                "Arguments": "",
+                "CommandName": "UpdateBoundaries",
+                "Errors": "__________None",
+                "InactiveTaskList": "__________None",
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskList": "__________None",
+                "TaskType": "Simple",
+                "Warnings": "__________None",
+                "_name_": "Update Boundaries"
+            },
+            "TaskObject:TaskObject8": {
+                "Arguments": "",
+                "CommandName": "CreateRegions",
+                "Errors": "__________None",
+                "InactiveTaskList": "__________None",
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskList": "__________None",
+                "TaskType": "Simple",
+                "Warnings": "__________None",
+                "_name_": "Create Regions"
+            },
+            "TaskObject:TaskObject9": {
+                "Arguments": "",
+                "CommandName": "UpdateRegions",
+                "Errors": "__________None",
+                "InactiveTaskList": "__________None",
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskList": "__________None",
+                "TaskType": "Simple",
+                "Warnings": "__________None",
+                "_name_": "Update Regions"
+            },
+            "TaskObject:TaskObject10": {
+                "Arguments": "",
+                "CommandName": "AddBoundaryLayers",
+                "Errors": "__________None",
+                "InactiveTaskList": "__________None",
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskList": "__________None",
+                "TaskType": "Compound",
+                "Warnings": "__________None",
+                "_name_": "Add Boundary Layers"
+            },
+            "TaskObject:TaskObject11": {
+                "Arguments": "",
+                "CommandName": "GenerateTheVolumeMeshWTM",
+                "Errors": "__________None",
+                "InactiveTaskList": "__________None",
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskList": "__________None",
+                "TaskType": "Simple",
+                "Warnings": "__________None",
+                "_name_": "Generate the Volume Mesh"
+            },
+            "TaskObject:TaskObject12": {
+                "Arguments": "",
+                "CommandName": "CreateLocalRefinementRegions",
+                "Errors": "__________None",
+                "InactiveTaskList": "__________None",
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskList": [
+                    "TaskObject13",
+                    "TaskObject14",
+                    "TaskObject15",
+                    "TaskObject16",
+                    "TaskObject17",
+                    "TaskObject18"
+                ],
+                "TaskType": "Compound",
+                "Warnings": "__________None",
+                "_name_": "Create Local Refinement Regions"
+            },
+            "TaskObject:TaskObject13": {
+                "Arguments": {
+                    "BOIMaxSize": "6",
+                    "BOISizeName": "local-refinement-front-wheel",
+                    "BoundingBoxObject": {
+                        "SizeRelativeLength": "Ratio relative to geometry size",
+                        "Xmax": "-13.645090484619145",
+                        "XmaxRatio": "0.10000000000000001",
+                        "Xmin": "-43.073911285400392",
+                        "XminRatio": "0.10000000000000001",
+                        "Ymax": "-33.014945983886719",
+                        "YmaxRatio": "1",
+                        "Ymin": "-95.976069259643552",
+                        "YminRatio": "0.10000000000000001",
+                        "Zmax": "32.314611804485324",
+                        "ZmaxRatio": "0.10000000000000001",
+                        "Zmin": "-3.6853697419166571",
+                        "ZminRatio": "0.10000000000000001"
+                    },
+                    "CreationMethod": "Box",
+                    "CylinderObject": {
+                        "HeightBackInc": "0",
+                        "HeightFrontInc": "0",
+                        "HeightNode": "none",
+                        "Node1": "none",
+                        "Node2": "none",
+                        "Node3": "none",
+                        "Options": "3 Arc Nodes",
+                        "Radius1": "0",
+                        "Radius2": "0"
+                    },
+                    "LabelSelectionList": [
+                        "front-msr"
+                    ],
+                    "OffsetObject": {
+                        "AspectRatio": "5",
+                        "BoundaryLayerHeight": "128",
+                        "BoundaryLayerLevels": "1",
+                        "CrossWakeGrowthFactor": "1.1000000000000001",
+                        "DefeaturingSize": "8",
+                        "FirstHeight": "0.01",
+                        "FlipDirection": "false",
+                        "FlowDirection": "X",
+                        "LastRatioPercentage": "20",
+                        "MptMethodType": "Automatic",
+                        "NumberOfLayers": "4",
+                        "OffsetMethodType": "uniform",
+                        "Rate": "1.2",
+                        "ShowCoordinates": "true",
+                        "WakeGrowthFactor": "2",
+                        "WakeLevels": "1",
+                        "X": "0",
+                        "Y": "0",
+                        "Z": "0"
+                    },
+                    "RefinementRegionsName": "local-refinement-front-wheel",
+                    "SelectionType": "label",
+                    "VolumeFill": "hexcore"
+                },
+                "CommandName": "CreateLocalRefinementRegions",
+                "Errors": "__________None",
+                "InactiveTaskList": "__________None",
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskList": "__________None",
+                "TaskType": "Compound Child",
+                "Warnings": "__________None",
+                "_name_": "local-refinement-front-wheel"
+            },
+            "TaskObject:TaskObject14": {
+                "Arguments": {
+                    "BOIMaxSize": "6",
+                    "BOISizeName": "local-refinement-rear-wheel",
+                    "BoundingBoxObject": {
+                        "Xmax": "-18.186838531494139",
+                        "Xmin": "-42.661008453369142",
+                        "Ymax": "70.132285118103013",
+                        "YmaxRatio": "1",
+                        "Ymin": "7.1322871208190923",
+                        "Zmax": "32.314682143926618",
+                        "Zmin": "-3.6852966129779818"
+                    },
+                    "LabelSelectionList": [
+                        "rear-msr"
+                    ],
+                    "RefinementRegionsName": "local-refinement-rear-wheel"
+                },
+                "CommandName": "CreateLocalRefinementRegions",
+                "Errors": "__________None",
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskType": "Compound Child",
+                "Warnings": "__________None",
+                "_name_": "local-refinement-rear-wheel"
+            },
+            "TaskObject:TaskObject15": {
+                "Arguments": {
+                    "BOIMaxSize": "2",
+                    "BOISizeName": "local-refinement-rear-wing",
+                    "BoundingBoxObject": {
+                        "Xmax": "1.2708615626869091e-12",
+                        "XmaxRatio": "0",
+                        "Xmin": "-49.447809219360977",
+                        "XminRatio": "0.5",
+                        "Ymax": "87.159013748168945",
+                        "YmaxRatio": "1.5",
+                        "Ymin": "57.312780380249023",
+                        "Zmax": "54.534439086914062",
+                        "ZmaxRatio": "1",
+                        "Zmin": "52.507626342773435"
+                    },
+                    "LabelSelectionList": [
+                        "rear-wing"
+                    ],
+                    "RefinementRegionsName": "local-refinement-rear-wing"
+                },
+                "CommandName": "CreateLocalRefinementRegions",
+                "Errors": "__________None",
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskType": "Compound Child",
+                "Warnings": "__________None",
+                "_name_": "local-refinement-rear-wing"
+            },
+            "TaskObject:TaskObject16": {
+                "Arguments": {
+                    "BOIMaxSize": "12",
+                    "BOISizeName": "local-refinement-nearfield",
+                    "BoundingBoxObject": {
+                        "SizeRelativeLength": "Directly specify coordinates",
+                        "Xmin": "-100",
+                        "Ymax": "300",
+                        "Ymin": "-175",
+                        "Zmax": "150",
+                        "Zmin": "0.20000000000000001"
+                    },
+                    "RefinementRegionsName": "local-refinement-nearfield"
+                },
+                "CommandName": "CreateLocalRefinementRegions",
+                "Errors": "__________None",
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskType": "Compound Child",
+                "Warnings": "__________None",
+                "_name_": "local-refinement-nearfield"
+            },
+            "TaskObject:TaskObject17": {
+                "Arguments": {
+                    "BOIMaxSize": "24",
+                    "BOISizeName": "local-refinement-midfield",
+                    "BoundingBoxObject": {
+                        "SizeRelativeLength": "Directly specify coordinates",
+                        "Xmax": "0",
+                        "Xmin": "-135",
+                        "Ymax": "450",
+                        "Ymin": "-250",
+                        "Zmax": "200",
+                        "Zmin": "0.20000000000000001"
+                    },
+                    "RefinementRegionsName": "local-refinement-midfield"
+                },
+                "CommandName": "CreateLocalRefinementRegions",
+                "Errors": "__________None",
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskType": "Compound Child",
+                "Warnings": "__________None",
+                "_name_": "local-refinement-midfield"
+            },
+            "TaskObject:TaskObject18": {
+                "Arguments": {
+                    "BOIMaxSize": "48",
+                    "BOISizeName": "local-refinement-farfield",
+                    "BoundingBoxObject": {
+                        "SizeRelativeLength": "Directly specify coordinates",
+                        "Xmax": "0",
+                        "XmaxRatio": "0.10000000000000001",
+                        "Xmin": "-180",
+                        "XminRatio": "0.10000000000000001",
+                        "Ymax": "700",
+                        "YmaxRatio": "0.10000000000000001",
+                        "Ymin": "-300",
+                        "YminRatio": "0.10000000000000001",
+                        "Zmax": "250",
+                        "ZmaxRatio": "0.10000000000000001",
+                        "Zmin": "0.20000000000000001",
+                        "ZminRatio": "0.10000000000000001"
+                    },
+                    "CreationMethod": "Box",
+                    "CylinderObject": {
+                        "HeightBackInc": "0",
+                        "HeightFrontInc": "0",
+                        "HeightNode": "none",
+                        "Node1": "none",
+                        "Node2": "none",
+                        "Node3": "none",
+                        "Options": "3 Arc Nodes",
+                        "Radius1": "0",
+                        "Radius2": "0"
+                    },
+                    "OffsetObject": {
+                        "AspectRatio": "5",
+                        "BoundaryLayerHeight": "128",
+                        "BoundaryLayerLevels": "1",
+                        "CrossWakeGrowthFactor": "1.1000000000000001",
+                        "DefeaturingSize": "8",
+                        "FirstHeight": "0.01",
+                        "FlipDirection": "false",
+                        "FlowDirection": "X",
+                        "LastRatioPercentage": "20",
+                        "MptMethodType": "Automatic",
+                        "NumberOfLayers": "4",
+                        "OffsetMethodType": "uniform",
+                        "Rate": "1.2",
+                        "ShowCoordinates": "true",
+                        "WakeGrowthFactor": "2",
+                        "WakeLevels": "1",
+                        "X": "0",
+                        "Y": "0",
+                        "Z": "0"
+                    },
+                    "RefinementRegionsName": "local-refinement-farfield",
+                    "SelectionType": "label",
+                    "VolumeFill": "hexcore"
+                },
+                "CommandName": "CreateLocalRefinementRegions",
+                "Errors": "__________None",
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskType": "Compound Child",
+                "Warnings": "__________None",
+                "_name_": "local-refinement-farfield"
+            },
+            "TaskObject:TaskObject19": {
+                "Arguments": {
+                    "AddChild": "yes",
+                    "BOICellsPerGap": "1",
+                    "BOIControlName": "curvature_chasis",
+                    "BOICurvatureNormalAngle": "12",
+                    "BOIExecution": "Curvature",
+                    "BOIFaceLabelList": [
+                        "chasis"
+                    ],
+                    "BOIGrowthRate": "1.2",
+                    "BOIMaxSize": "4.8713009999999999",
+                    "BOIMinSize": "0.14887890000000001",
+                    "BOIScopeTo": "faces and edges",
+                    "BOIZoneorLabel": "label",
+                    "CompleteFaceLabelList": [
+                        "chasis"
+                    ],
+                    "DrawSizeControl": "true"
+                },
+                "CommandName": "AddLocalSizingWTM",
+                "Errors": "__________None",
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskType": "Compound Child",
+                "Warnings": "__________None",
+                "_name_": "curvature_chasis"
+            },
+            "TaskObject:TaskObject20": {
+                "Arguments": {
+                    "AddChild": "yes",
+                    "BOICellsPerGap": "1",
+                    "BOIControlName": "curvature_aero",
+                    "BOICurvatureNormalAngle": "9",
+                    "BOIExecution": "Curvature",
+                    "BOIFaceLabelList": [
+                        "front-wing",
+                        "rear-wing"
+                    ],
+                    "BOIGrowthRate": "1.2",
+                    "BOIMaxSize": "0.94999999999999996",
+                    "BOIMinSize": "0.074999999999999997",
+                    "BOIScopeTo": "faces and edges",
+                    "BOIZoneorLabel": "label",
+                    "CompleteFaceLabelList": [
+                        "front-wing",
+                        "rear-wing"
+                    ]
+                },
+                "CommandName": "AddLocalSizingWTM",
+                "Errors": "__________None",
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskType": "Compound Child",
+                "Warnings": "__________None",
+                "_name_": "curvature_aero"
+            },
+            "TaskObject:TaskObject21": {
+                "Arguments": {
+                    "AddChild": "yes",
+                    "BOICellsPerGap": "1",
+                    "BOIControlName": "curvature_wheels",
+                    "BOICurvatureNormalAngle": "18",
+                    "BOIExecution": "Curvature",
+                    "BOIFaceLabelList": [
+                        "front-msr",
+                        "rear-msr"
+                    ],
+                    "BOIGrowthRate": "1.2",
+                    "BOIMaxSize": "4",
+                    "BOIMinSize": "0.074999999999999997",
+                    "BOIZoneorLabel": "label",
+                    "CompleteFaceLabelList": [
+                        "front-msr",
+                        "rear-msr"
+                    ]
+                },
+                "CommandName": "AddLocalSizingWTM",
+                "Errors": "__________None",
+                "ObjectPath": "",
+                "State": "Out-of-date",
+                "TaskType": "Compound Child",
+                "Warnings": "__________None",
+                "_name_": "curvature_wheels"
+            },
+            "Workflow": {
+                "CurrentTask": "TaskObject21",
+                "TaskList": [
+                    "TaskObject1",
+                    "TaskObject12",
+                    "TaskObject2",
+                    "TaskObject3",
+                    "TaskObject4",
+                    "TaskObject9",
+                    "TaskObject10",
+                    "TaskObject11"
+                ]
+            }
+        }
+    },
+    "meshing": {
+        "version": "24.1",
+        "ROOT": {
+            "GlobalSettings": {
+                "AreaUnit": "mm^2",
+                "EnableCleanCAD": "true",
+                "EnableComplexMeshing": "false",
+                "EnableOversetMeshing": "false",
+                "EnablePrime2dMeshing": "false",
+                "EnablePrimeMeshing": "false",
+                "InitialVersion": "24.1",
+                "LengthUnit": "mm",
+                "NormalMode": "false",
+                "VolumeUnit": "mm^3",
+                "FTMRegionData": {
+                    "AllOversetNameList": "__________None",
+                    "AllOversetSizeList": "__________None",
+                    "AllOversetTypeList": "__________None",
+                    "AllOversetVolumeFillList": "__________None",
+                    "AllRegionFilterCategories": "__________None",
+                    "AllRegionLeakageSizeList": "__________None",
+                    "AllRegionLinkedConstructionSurfaceList": "__________None",
+                    "AllRegionMeshMethodList": "__________None",
+                    "AllRegionNameList": "__________None",
+                    "AllRegionOversetComponenList": "__________None",
+                    "AllRegionSizeList": "__________None",
+                    "AllRegionSourceList": "__________None",
+                    "AllRegionTypeList": "__________None",
+                    "AllRegionVolumeFillList": "__________None"
+                }
+            }
+        }
+    },
+    "PartManagement": {
+        "version": "24.1",
+        "ROOT": {
+            "Node:Node1": {
+                "Name": "Meshing Model",
+                "_name_": "Meshing Model"
+            }
+        }
+    }
+}

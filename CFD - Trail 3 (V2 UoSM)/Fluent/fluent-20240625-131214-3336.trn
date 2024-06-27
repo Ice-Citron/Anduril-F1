@@ -1,0 +1,396 @@
+Auto-Transcript Start Time:  13:12:14, 25 Jun 2024 Malay Peninsula Standard Time 
+Current Directory: "C:\Users\USER\Documents\Project CES\Anduril F1\Ansys Fluent CFD\CFD - Trail 3 (V2 UoSM)\Fluent"
+
+              Welcome to ANSYS Fluent 2024 R1
+
+              Copyright 1987-2024 ANSYS, Inc. All Rights Reserved.
+              Unauthorized use, distribution or duplication is prohibited.
+              This product is subject to U.S. laws governing export and re-export.
+              For full Legal Notice, see documentation.
+
+Build Time: Nov 22 2023 10:31:01 EST  Build Id: 10184  
+ 
+Connected License Server List:	<Shared_Web_License_Server>
+
+     --------------------------------------------------------------
+     This is a student version of ANSYS FLUENT. Usage of this product
+     license is limited to the terms and conditions specified in your ANSYS
+     license form, additional terms section.
+     --------------------------------------------------------------
+Host spawning Node 0 on machine "StarForge-FS" (win64).
+
+----------------------------------------------------------------------------------------
+ID    Hostname      Core   O.S.         PID    Vendor                                  
+----------------------------------------------------------------------------------------
+n15   StarForge-FS  16/16  Windows-x64  23052  13th Gen Intel(R) Core(TM) i7-13620H    
+n14   StarForge-FS  15/16  Windows-x64  14636  13th Gen Intel(R) Core(TM) i7-13620H    
+n13   StarForge-FS  14/16  Windows-x64  22820  13th Gen Intel(R) Core(TM) i7-13620H    
+n12   StarForge-FS  13/16  Windows-x64  23760  13th Gen Intel(R) Core(TM) i7-13620H    
+n11   StarForge-FS  12/16  Windows-x64  20388  13th Gen Intel(R) Core(TM) i7-13620H    
+n10   StarForge-FS  11/16  Windows-x64  16216  13th Gen Intel(R) Core(TM) i7-13620H    
+n9    StarForge-FS  10/16  Windows-x64  5664   13th Gen Intel(R) Core(TM) i7-13620H    
+n8    StarForge-FS  9/16   Windows-x64  25000  13th Gen Intel(R) Core(TM) i7-13620H    
+n7    StarForge-FS  8/16   Windows-x64  22736  13th Gen Intel(R) Core(TM) i7-13620H    
+n6    StarForge-FS  7/16   Windows-x64  22876  13th Gen Intel(R) Core(TM) i7-13620H    
+n5    StarForge-FS  6/16   Windows-x64  23664  13th Gen Intel(R) Core(TM) i7-13620H    
+n4    StarForge-FS  5/16   Windows-x64  15104  13th Gen Intel(R) Core(TM) i7-13620H    
+n3    StarForge-FS  4/16   Windows-x64  4816   13th Gen Intel(R) Core(TM) i7-13620H    
+n2    StarForge-FS  3/16   Windows-x64  16328  13th Gen Intel(R) Core(TM) i7-13620H    
+n1    StarForge-FS  2/16   Windows-x64  24060  13th Gen Intel(R) Core(TM) i7-13620H    
+n0*   StarForge-FS  1/16   Windows-x64  21412  13th Gen Intel(R) Core(TM) i7-13620H    
+host  StarForge-FS         Windows-x64  8228   13th Gen Intel(R) Core(TM) i7-13620H    
+
+MPI Option Selected: intel
+Selected system interconnect: default
+----------------------------------------------------------------------------------------
+
+Cleanup script file is C:\\Users\\USER\\Documents\\Project CES\\Anduril F1\\Ansys Fluent CFD\\CFD - Trail 3 (V2 UoSM)\\Fluent\\cleanup-fluent-StarForge-FS-8228.bat
+(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)
+
+Meshing> (cx-gui-do cx-activate-item "Key Behavioral Changes*PanelButtons*PushButton1(OK)")
+(cx-use-window-id 51)
+zone not found.
+
+Warning: PMDB file will not be saved as the same is being imported.
+
+Importing one geom object per program-controlled and one zone per body ...
+    C:\\Program Files\\ANSYS Inc\\ANSYS Student\\v241\\commonfiles\\CPython\\3_10\\winx64\\Release\\python\\..\\Ansys\\TGrid\\CADReaders.py started by USER on StarForge-FS winx64 on Tue Jun 25 13:13:22 2024
+    using Python 3.10.9 (remotes/origin/4e018266dafe29ec2836492d71d245fcfd366d07-dirty:4e018266, Jan  3 2) [MSC v.1920 64 bit (AMD64)]
+    
+    using Ansys.Meshing.FieldMesher build Nov 27 2023 11:54:13
+    
+    running ANSYS TGrid CADToTGridConverter ...
+    setting up parameters ...
+    setting up parameters done.
+    running conversion ...
+    converting 1 file(s) from Workbench to FLTG using output path 'C:\\Users\\USER\\Documents\\Project CES\\Anduril F1\\Ansys Fluent CFD\\CFD - Trail 3 (V2 UoSM)\\Export\\FM_StarForge-FS_3336/out17192924013336.tgf'
+    converting file 'V2-UoSM.pmdb' (1 of 1) from Workbench to FLTG using output path 'C:\\Users\\USER\\Documents\\Project CES\\Anduril F1\\Ansys Fluent CFD\\CFD - Trail 3 (V2 UoSM)\\Export\\FM_StarForge-FS_3336'
+    importing data ...
+    importing meshing model from PartMgr from file 'C:/Users/USER/Documents/Project CES/Anduril F1/Ansys Fluent CFD/CFD - Trail 3 (V2 UoSM)/Export/V2-UoSM.pmdb' ...
+    setting enclosure and symmetry processing to False
+    setting transfer named selections to True
+    setting named selection prefixes to ''
+    setting mixed import resolution type to 'SolidAndSurface'
+    setting target application to 'FluentMeshing'
+    initializing part manager from file ...
+    processing assembly 'C:\\Users\\USER\\Documents\\Project CES\\Anduril F1\\Ansys Fluent CFD\\CFD - Trail 3 (V2 UoSM)\\Discovery_File.dsco' with ID 1 and reference key '<?xml version="1.0" encoding="utf-16"?>
+    <IdTable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <Table>
+        <Entry>
+          <AssemblyVersionInfo>
+            <AssemblySavedVersion>2147483647</AssemblySavedVersion>
+            <AssemblySavedBuildDate>2147483647</AssemblySavedBuildDate>
+            <MigrateToCompressedLabelIsDisabled>false</MigrateToCompressedLabelIsDisabled>
+          </AssemblyVersionInfo>
+          <Text>~sE839a2bf3-ffdd-42f7-b4a1-b7d32417d515.2_#</Text>
+          <Id>10000</Id>
+          <IsExploded>false</IsExploded>
+        </Entry>
+      </Table>
+      <AssemblyVersionInfo>
+        <AssemblySavedVersion>2147483647</AssemblySavedVersion>
+        <AssemblySavedBuildDate>2147483647</AssemblySavedBuildDate>
+        <MigrateToCompressedLabelIsDisabled>false</MigrateToCompressedLabelIsDisabled>
+      </AssemblyVersionInfo>
+    </IdTable>'
+    length unit = [m]
+    processing part 'Discovery_File' with ID 3
+    processing named selection 'Inlet'
+    processing named selection 'Outlet'
+    processing named selection 'Top wall'
+    processing named selection 'Side wall'
+    processing named selection 'Ground'
+    processing named selection 'Symmetry'
+    processing named selection 'Front Wing'
+    processing named selection 'Front Wheel Patch'
+    processing named selection 'Rear Wheel Patch'
+    processing named selection 'Front MSR'
+    processing named selection 'Rear MSR'
+    processing named selection 'Rear Wing'
+    processing named selection 'Chasis'
+    processing data ...
+    removing named collections of entities ...
+    removing named collections of entities stopped, no named collections selected.
+    analyzing feature edges ...
+    detecting feature edges, feature angle = 40 [deg] ...
+        Data information
+            Meshing model
+                Attributes:
+                    'LengthUnit': '[mm]'
+                Entity summary:
+                    Collection: 13
+                    Component : 2
+                    Body      : 1
+                    Shell     : 2
+                    Face      : 240
+                    Loop      : 261
+                    Edge      : 613
+                    Vertex    : 388
+                    Surface   : 240
+                    Curve     : 613
+                Tessellation summary:
+                    Face facets  : 29880
+                    Edge segments: 6840
+                Bounding box:
+                    (-335.9761047363281, -516.7127875685692, -0.8299999999999998) x (8.715007151563684e-05, 2031.807667613029, 348.9836120605469)
+                Assembly component hierarchy:
+                    'C:\\Users\\USER\\Documents\\Project CES\\Anduril F1\\Ansys Fluent CFD\\CFD - Trail 3 (V2 UoSM)\\Discovery_File.dsco'
+                      'Discovery_File'
+                NamedCollections:
+                    'Inlet'
+                    'Outlet'
+                    'Top wall'
+                    'Side wall'
+                    'Ground'
+                    'Symmetry'
+                    'Front Wing'
+                    'Front Wheel Patch'
+                    'Rear Wheel Patch'
+                    'Front MSR'
+                    'Rear MSR'
+                    'Rear Wing'
+                    'Chasis'
+    
+    
+    exporting FLTG data to file 'C:\\Users\\USER\\Documents\\Project CES\\Anduril F1\\Ansys Fluent CFD\\CFD - Trail 3 (V2 UoSM)\\Export\\FM_StarForge-FS_3336\\out17192924013336.tgf' ...
+    writing face-based mesh file 'C:\\Users\\USER\\Documents\\Project CES\\Anduril F1\\Ansys Fluent CFD\\CFD - Trail 3 (V2 UoSM)\\Export\\FM_StarForge-FS_3336\\out17192924013336.tgf' ...
+    ======== Exported Data ========
+    Entity summary:
+        Object       : 1
+        Object region: 14
+        Zone         : 38
+    
+    running conversion done.
+    running ANSYS TGrid CADToTGridConverter done.
+    ran ANSYS TGrid CADToTGridConverter in 0.525 [s]
+        ======== Command Execution Log Manager ========
+        Number of execution logs: 0
+    
+
+Reading "C:\Users\USER\Documents\Project CES\Anduril F1\Ansys Fluent CFD\CFD - Trail 3 (V2 UoSM)\Export\FM_StarForge-FS_3336/out17192924013336.tgf"...
+Reading "C:\Users\USER\Documents\Project CES\Anduril F1\Ansys Fluent CFD\CFD - Trail 3 (V2 UoSM)\Export\FM_StarForge-FS_3336/out17192924013336.tgf"...
+nodes: 16311
+edges: 1400
+faces: 29846
+cells: 0
+reading 16311 storage data (id 1, type 41, double precision binary).
+generating pointers...done.
+extracting boundary entities...
+ 16311 boundary nodes.
+ 29846 boundary faces.
+ 13 boundary face zones.
+done.
+analyzing boundary connectivity...done.
+
+---------------- Import of V2-UoSM, consisting of one single part/object , complete. 
+ 
+(newline)
+
+
+Meshing> (cx-use-window-id 51)
+(cx-set-camera-relative '(-1128.86 -18179 1293.52) '(0 0 0) '(0.846577 0.0198818 1.09277) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(4334.6 294.759 -6948.8) '(0 0 0) '(0.11784 -0.138165 0.0687519) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-196.949 306.066 1352.13) '(0 0 0) '(-0.16959 0.178252 -0.0917134) 0 0)
+S_CreateRefinementRegions:
+ RefinementRegionsName : local-refinement-front-wheel
+ CreationMethod : Box
+ BOIMaxSize : 4
+ BOISizeName : boi_1
+ SelectionType : label
+ ZoneSelectionList : ()
+ ZoneLocation : ()
+ LabelSelectionList : (front-msr)
+ ObjectSelectionList : ()
+ ZoneSelectionSingle : ()
+ ObjectSelectionSingle : ()
+ BoundingBoxObject : (__map__ (SizeRelativeLength . Ratio relative to geometry size) (Xmax . -13.64509) (XmaxRatio . 0.1) (Xmin . -43.073911) (XminRatio . 0.1) (Ymax . -33.014946) (YmaxRatio . 1) (Ymin . -95.976069) (YminRatio . 0.1) (Zmax . 32.314612) (ZmaxRatio . 0.1) (Zmin . -3.6853697) (ZminRatio . 0.1))
+ OffsetObject : (__map__ (AspectRatio . 5) (BoundaryLayerHeight . 128) (BoundaryLayerLevels . 1) (CrossWakeGrowthFactor . 1.1) (DefeaturingSize . 8) (EdgeSelectionList) (FirstHeight . 0.01) (FlipDirection . #f) (FlowDirection . X) (LastRatioPercentage . 20) (MptMethodType . Automatic) (NumberOfLayers . 4) (OffsetMethodType . uniform) (Rate . 1.2) (ShowCoordinates . #t) (WakeGrowthFactor . 2) (WakeLevels . 1) (X . 0) (Y . 0) (Z . 0))
+ CylinderObject : (__map__ (HeightBackInc . 0) (HeightFrontInc . 0) (HeightNode . none) (Node1 . none) (Node2 . none) (Node3 . none) (Options . 3 Arc Nodes) (Radius1 . 0) (Radius2 . 0))
+ VolumeFill : hexcore
+Create new external boundaries.
+
+---------------- A refinement region was added with the size 4
+S_CreateRefinementRegions:
+ RefinementRegionsName : local-refinement-rear-wheel
+ CreationMethod : Box
+ BOIMaxSize : 4
+ BOISizeName : boi_1
+ SelectionType : label
+ ZoneSelectionList : ()
+ ZoneLocation : ()
+ LabelSelectionList : (rear-msr)
+ ObjectSelectionList : ()
+ ZoneSelectionSingle : ()
+ ObjectSelectionSingle : ()
+ BoundingBoxObject : (__map__ (SizeRelativeLength . Ratio relative to geometry size) (Xmax . -18.186839) (XmaxRatio . 0.1) (Xmin . -42.661008) (XminRatio . 0.1) (Ymax . 70.132285) (YmaxRatio . 1) (Ymin . 7.1322871) (YminRatio . 0.1) (Zmax . 32.314682) (ZmaxRatio . 0.1) (Zmin . -3.6852966) (ZminRatio . 0.1))
+ OffsetObject : (__map__ (AspectRatio . 5) (BoundaryLayerHeight . 16) (BoundaryLayerLevels . 1) (CrossWakeGrowthFactor . 1.1) (DefeaturingSize . 8) (EdgeSelectionList) (FirstHeight . 0.01) (FlipDirection . #f) (FlowDirection . X) (LastRatioPercentage . 20) (MptMethodType . Automatic) (NumberOfLayers . 4) (OffsetMethodType . uniform) (Rate . 1.2) (ShowCoordinates . #t) (WakeGrowthFactor . 2) (WakeLevels . 1) (X . 0) (Y . 0) (Z . 0))
+ CylinderObject : (__map__ (HeightBackInc . 0) (HeightFrontInc . 0) (HeightNode . none) (Node1 . none) (Node2 . none) (Node3 . none) (Options . 3 Arc Nodes) (Radius1 . 0) (Radius2 . 0))
+ VolumeFill : hexcore
+Create new external boundaries.
+
+---------------- A refinement region was added with the size 4
+(cx-use-window-id 51)
+(dolly-camera 64.0071 -82.4581 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(dolly-camera 16.6816 -30.3131 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(61.2112 53.6448 -38.2643) '(0 0 0) '(0.0150521 0.0506489 -0.0847121) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-57.274 -21.7532 65.8664) '(0 0 0) '(0.0199403 -0.00055176 -0.0123715) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-6.9796 2.40719 10.787) '(0 0 0) '(-0.0113916 0.0143993 -0.0176266) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(1.23087 -12.248 -14.8344) '(0 0 0) '(0.0492356 -0.0475447 0.0450505) 0 0)
+(cx-use-window-id 51)
+zone id: 7, name: origin-symmetry, type: geometry, count: 419
+S_CreateRefinementRegions:
+ RefinementRegionsName : local-refinement-rear-wing
+ CreationMethod : Box
+ BOIMaxSize : 2
+ BOISizeName : boi_1
+ SelectionType : label
+ ZoneSelectionList : ()
+ ZoneLocation : ()
+ LabelSelectionList : (rear-wing)
+ ObjectSelectionList : ()
+ ZoneSelectionSingle : ()
+ ObjectSelectionSingle : ()
+ BoundingBoxObject : (__map__ (SizeRelativeLength . Ratio relative to geometry size) (Xmax . 1.2708616e-12) (XmaxRatio . 0) (Xmin . -49.447809) (XminRatio . 0.5) (Ymax . 87.159014) (YmaxRatio . 1.5) (Ymin . 57.31278) (YminRatio . 0.1) (Zmax . 54.534439) (ZmaxRatio . 1) (Zmin . 52.507626) (ZminRatio . 0.1))
+ OffsetObject : (__map__ (AspectRatio . 5) (BoundaryLayerHeight . 8) (BoundaryLayerLevels . 1) (CrossWakeGrowthFactor . 1.1) (DefeaturingSize . 8) (EdgeSelectionList) (FirstHeight . 0.01) (FlipDirection . #f) (FlowDirection . X) (LastRatioPercentage . 20) (MptMethodType . Automatic) (NumberOfLayers . 4) (OffsetMethodType . uniform) (Rate . 1.2) (ShowCoordinates . #t) (WakeGrowthFactor . 2) (WakeLevels . 1) (X . 0) (Y . 0) (Z . 0))
+ CylinderObject : (__map__ (HeightBackInc . 0) (HeightFrontInc . 0) (HeightNode . none) (Node1 . none) (Node2 . none) (Node3 . none) (Options . 3 Arc Nodes) (Radius1 . 0) (Radius2 . 0))
+ VolumeFill : hexcore
+Create new external boundaries.
+
+---------------- A refinement region was added with the size 2
+deleting face-zone local-refinement-rear-wing (id 67) 
+deleting node-zone boundary-node-69 (id 69) 
+deleting node-zone boundary-node-70 (id 70) 
+removed 46552 faces.
+Deleting local-refinement-rear-wing-boi
+deleting face-zone local-refinement-rear-wheel (id 58) 
+deleting node-zone boundary-node-71 (id 71) 
+deleting node-zone boundary-node-72 (id 72) 
+removed 984 faces.
+Deleting local-refinement-rear-wheel-boi
+deleting face-zone local-refinement-front-wheel (id 49) 
+deleting node-zone boundary-node-73 (id 73) 
+deleting node-zone boundary-node-74 (id 74) 
+removed 792 faces.
+Deleting local-refinement-front-wheel-boi
+S_CreateRefinementRegions:
+ RefinementRegionsName : local-refinement-front-wheel
+ CreationMethod : Box
+ BOIMaxSize : 3
+ BOISizeName : local-refinement-front-wheel
+ SelectionType : label
+ ZoneSelectionList : ()
+ ZoneLocation : ()
+ LabelSelectionList : (front-msr)
+ ObjectSelectionList : ()
+ ZoneSelectionSingle : ()
+ ObjectSelectionSingle : ()
+ BoundingBoxObject : (__map__ (SizeRelativeLength . Ratio relative to geometry size) (Xmax . -13.64509) (XmaxRatio . 0.1) (Xmin . -43.073911) (XminRatio . 0.1) (Ymax . -33.014946) (YmaxRatio . 1) (Ymin . -95.976069) (YminRatio . 0.1) (Zmax . 32.314612) (ZmaxRatio . 0.1) (Zmin . -3.6853697) (ZminRatio . 0.1))
+ OffsetObject : (__map__ (AspectRatio . 5) (BoundaryLayerHeight . 128) (BoundaryLayerLevels . 1) (CrossWakeGrowthFactor . 1.1) (DefeaturingSize . 8) (EdgeSelectionList) (FirstHeight . 0.01) (FlipDirection . #f) (FlowDirection . X) (LastRatioPercentage . 20) (MptMethodType . Automatic) (NumberOfLayers . 4) (OffsetMethodType . uniform) (Rate . 1.2) (ShowCoordinates . #t) (WakeGrowthFactor . 2) (WakeLevels . 1) (X . 0) (Y . 0) (Z . 0))
+ CylinderObject : (__map__ (HeightBackInc . 0) (HeightFrontInc . 0) (HeightNode . none) (Node1 . none) (Node2 . none) (Node3 . none) (Options . 3 Arc Nodes) (Radius1 . 0) (Radius2 . 0))
+ VolumeFill : hexcore
+Create new external boundaries.
+
+---------------- A refinement region was added with the size 3
+S_CreateRefinementRegions:
+ RefinementRegionsName : local-refinement-rear-wheel
+ CreationMethod : Box
+ BOIMaxSize : 3
+ BOISizeName : local-refinement-rear-wheel
+ SelectionType : label
+ ZoneSelectionList : ()
+ ZoneLocation : ()
+ LabelSelectionList : (rear-msr)
+ ObjectSelectionList : ()
+ ZoneSelectionSingle : ()
+ ObjectSelectionSingle : ()
+ BoundingBoxObject : (__map__ (SizeRelativeLength . Ratio relative to geometry size) (Xmax . -18.186839) (XmaxRatio . 0.1) (Xmin . -42.661008) (XminRatio . 0.1) (Ymax . 70.132285) (YmaxRatio . 1) (Ymin . 7.1322871) (YminRatio . 0.1) (Zmax . 32.314682) (ZmaxRatio . 0.1) (Zmin . -3.6852966) (ZminRatio . 0.1))
+ OffsetObject : (__map__ (AspectRatio . 5) (BoundaryLayerHeight . 12) (BoundaryLayerLevels . 1) (CrossWakeGrowthFactor . 1.1) (DefeaturingSize . 8) (EdgeSelectionList) (FirstHeight . 0.01) (FlipDirection . #f) (FlowDirection . X) (LastRatioPercentage . 20) (MptMethodType . Automatic) (NumberOfLayers . 4) (OffsetMethodType . uniform) (Rate . 1.2) (ShowCoordinates . #t) (WakeGrowthFactor . 2) (WakeLevels . 1) (X . 0) (Y . 0) (Z . 0))
+ CylinderObject : (__map__ (HeightBackInc . 0) (HeightFrontInc . 0) (HeightNode . none) (Node1 . none) (Node2 . none) (Node3 . none) (Options . 3 Arc Nodes) (Radius1 . 0) (Radius2 . 0))
+ VolumeFill : hexcore
+Create new external boundaries.
+
+---------------- A refinement region was added with the size 3
+S_CreateRefinementRegions:
+ RefinementRegionsName : local-refinement-rear-wing
+ CreationMethod : Box
+ BOIMaxSize : 2
+ BOISizeName : local-refinement-rear-wing
+ SelectionType : label
+ ZoneSelectionList : ()
+ ZoneLocation : ()
+ LabelSelectionList : (rear-wing)
+ ObjectSelectionList : ()
+ ZoneSelectionSingle : ()
+ ObjectSelectionSingle : ()
+ BoundingBoxObject : (__map__ (SizeRelativeLength . Ratio relative to geometry size) (Xmax . 1.2708616e-12) (XmaxRatio . 0) (Xmin . -49.447809) (XminRatio . 0.5) (Ymax . 87.159014) (YmaxRatio . 1.5) (Ymin . 57.31278) (YminRatio . 0.1) (Zmax . 54.534439) (ZmaxRatio . 1) (Zmin . 52.507626) (ZminRatio . 0.1))
+ OffsetObject : (__map__ (AspectRatio . 5) (BoundaryLayerHeight . 8) (BoundaryLayerLevels . 1) (CrossWakeGrowthFactor . 1.1) (DefeaturingSize . 8) (EdgeSelectionList) (FirstHeight . 0.01) (FlipDirection . #f) (FlowDirection . X) (LastRatioPercentage . 20) (MptMethodType . Automatic) (NumberOfLayers . 4) (OffsetMethodType . uniform) (Rate . 1.2) (ShowCoordinates . #t) (WakeGrowthFactor . 2) (WakeLevels . 1) (X . 0) (Y . 0) (Z . 0))
+ CylinderObject : (__map__ (HeightBackInc . 0) (HeightFrontInc . 0) (HeightNode . none) (Node1 . none) (Node2 . none) (Node3 . none) (Options . 3 Arc Nodes) (Radius1 . 0) (Radius2 . 0))
+ VolumeFill : hexcore
+Create new external boundaries.
+
+---------------- A refinement region was added with the size 2
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-1780.89 -2305.3 219.415) '(0 0 0) '(-0.154793 0.0525941 -0.0134524) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-511.883 -50.823 312.312) '(0 0 0) '(-0.00793296 0.113722 -0.0139919) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(9.0004 -28.6584 -191.445) '(0 0 0) '(0.00757197 -0.0643048 0.0100565) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(1604.04 1182.27 -262.866) '(0 0 0) '(0.218068 0.0119226 0.00888777) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(60.8694 155.575 88.527) '(0 0 0) '(-0.0326651 0.00389624 0.00108016) 0 0)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0 0 0) '(0 0 0) '(0 0 0) 0 0)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-540.562 1209.31 255.363) '(0 0 0) '(-0.156257 -0.0605236 -0.0141389) 0 0)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+zone not found.
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-gui-do cx-activate-item "MenuBar*FileMenu*Save Picture...")
+(cx-gui-do cx-activate-item "Save Picture*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-activate-item "MenuBar*FileMenu*Preferences...")
+(cx-gui-do cx-activate-item "Preferences*PanelButtons*PushButton2(Cancel)")
+(cx-use-window-id 51)
+zone id: 7, name: origin-symmetry, type: geometry, count: 419
+(cx-use-window-id 51)
+zone not found.
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(handle-key "control s")
+(graphics-set-projection-target)
+Zone "origin-symmetry" set as target.
+()
+
+
+> (cx-use-window-id 51)
+zone not found.
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(handle-key "control s")
+(graphics-set-projection-target)()
+
+
+> (cx-use-window-id 51)
+zone not found.

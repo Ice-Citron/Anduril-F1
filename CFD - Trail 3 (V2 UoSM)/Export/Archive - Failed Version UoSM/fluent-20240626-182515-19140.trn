@@ -1,0 +1,1196 @@
+Auto-Transcript Start Time:  18:25:15, 26 Jun 2024 Malay Peninsula Standard Time 
+Current Directory: "C:\Users\USER\Documents\Project CES\Anduril F1\Ansys Fluent CFD\CFD - Trail 3 (V2 UoSM)\Export"
+
+              Welcome to ANSYS Fluent 2024 R1
+
+              Copyright 1987-2024 ANSYS, Inc. All Rights Reserved.
+              Unauthorized use, distribution or duplication is prohibited.
+              This product is subject to U.S. laws governing export and re-export.
+              For full Legal Notice, see documentation.
+
+Build Time: Nov 22 2023 10:31:01 EST  Build Id: 10184  
+ 
+Connected License Server List:	<Shared_Web_License_Server>
+
+     --------------------------------------------------------------
+     This is a student version of ANSYS FLUENT. Usage of this product
+     license is limited to the terms and conditions specified in your ANSYS
+     license form, additional terms section.
+     --------------------------------------------------------------
+Host spawning Node 0 on machine "StarForge-FS" (win64).
+
+----------------------------------------------------------------------------------------
+ID    Hostname      Core   O.S.         PID    Vendor                                  
+----------------------------------------------------------------------------------------
+n15   StarForge-FS  16/16  Windows-x64  14384  13th Gen Intel(R) Core(TM) i7-13620H    
+n14   StarForge-FS  15/16  Windows-x64  12896  13th Gen Intel(R) Core(TM) i7-13620H    
+n13   StarForge-FS  14/16  Windows-x64  19056  13th Gen Intel(R) Core(TM) i7-13620H    
+n12   StarForge-FS  13/16  Windows-x64  14380  13th Gen Intel(R) Core(TM) i7-13620H    
+n11   StarForge-FS  12/16  Windows-x64  17932  13th Gen Intel(R) Core(TM) i7-13620H    
+n10   StarForge-FS  11/16  Windows-x64  19300  13th Gen Intel(R) Core(TM) i7-13620H    
+n9    StarForge-FS  10/16  Windows-x64  15556  13th Gen Intel(R) Core(TM) i7-13620H    
+n8    StarForge-FS  9/16   Windows-x64  18328  13th Gen Intel(R) Core(TM) i7-13620H    
+n7    StarForge-FS  8/16   Windows-x64  13332  13th Gen Intel(R) Core(TM) i7-13620H    
+n6    StarForge-FS  7/16   Windows-x64  15640  13th Gen Intel(R) Core(TM) i7-13620H    
+n5    StarForge-FS  6/16   Windows-x64  2036   13th Gen Intel(R) Core(TM) i7-13620H    
+n4    StarForge-FS  5/16   Windows-x64  13592  13th Gen Intel(R) Core(TM) i7-13620H    
+n3    StarForge-FS  4/16   Windows-x64  17656  13th Gen Intel(R) Core(TM) i7-13620H    
+n2    StarForge-FS  3/16   Windows-x64  17564  13th Gen Intel(R) Core(TM) i7-13620H    
+n1    StarForge-FS  2/16   Windows-x64  11508  13th Gen Intel(R) Core(TM) i7-13620H    
+n0*   StarForge-FS  1/16   Windows-x64  18148  13th Gen Intel(R) Core(TM) i7-13620H    
+host  StarForge-FS         Windows-x64  7416   13th Gen Intel(R) Core(TM) i7-13620H    
+
+MPI Option Selected: intel
+Selected system interconnect: default
+----------------------------------------------------------------------------------------
+
+Cleanup script file is C:\\Users\\USER\\Documents\\Project CES\\Anduril F1\\Ansys Fluent CFD\\CFD - Trail 3 (V2 UoSM)\\Export\\cleanup-fluent-StarForge-FS-7416.bat
+(cx-gui-do cx-activate-tab-index "NavigationPane*Frame1(TreeTab)" 0)
+Reading "C:/Users/USER/Documents/Project CES/Anduril F1/Ansys Fluent CFD/CFD - Trail 3 (V2 UoSM)/Export/V2-UoSM.msh.h5" ...
+3D mesh
+nodes: 16717
+edges: 1400
+faces: 30638 
+cells: 0 
+reading 3 node zones
+reading 25 edge zones
+reading 14 face zones
+generating pointers...done.
+extracting boundary entities...
+ 16717 boundary nodes.
+ 30638 boundary faces.
+ 14 boundary face zones.
+done.
+analyzing boundary connectivity...done.
+
+Meshing> (newline)
+
+
+Meshing> (cx-gui-do cx-activate-item "Key Behavioral Changes*PanelButtons*PushButton1(OK)")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(1337.33 -5286.58 2963.83) '(0 0 0) '(0.290464 0.254232 0.321328) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-1357.03 -12396.6 -3764.15) '(0 0 0) '(0.701752 -0.304274 0.74963) 0 0)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-884.995 -1523.96 405.861) '(0 0 0) '(-0.249809 0.098726 -0.0367492) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-389.877 -79.5243 -25.1633) '(0 0 0) '(-0.0273062 0.121507 -0.0279916) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(19.0773 -10.2281 -55.0753) '(0 0 0) '(-0.0173299 -0.104174 0.0133385) 0 0)
+deleting face-zone local-refinement-front-wheel (id 49) 
+deleting node-zone boundary-node-52 (id 52) 
+deleting node-zone boundary-node-53 (id 53) 
+removed 792 faces.
+Deleting local-refinement-front-wheel-boi
+S_CreateRefinementRegions:
+ RefinementRegionsName : local-refinement-front-wheel
+ CreationMethod : Box
+ BOIMaxSize : 6
+ BOISizeName : local-refinement-front-wheel
+ SelectionType : label
+ ZoneSelectionList : ()
+ ZoneLocation : ()
+ LabelSelectionList : (front-msr)
+ ObjectSelectionList : ()
+ ZoneSelectionSingle : ()
+ ObjectSelectionSingle : ()
+ BoundingBoxObject : (__map__ (SizeRelativeLength . Ratio relative to geometry size) (Xmax . -13.64509) (XmaxRatio . 0.1) (Xmin . -43.073911) (XminRatio . 0.1) (Ymax . -33.014946) (YmaxRatio . 1) (Ymin . -95.976069) (YminRatio . 0.1) (Zmax . 32.314612) (ZmaxRatio . 0.1) (Zmin . -3.6853697) (ZminRatio . 0.1))
+ OffsetObject : (__map__ (AspectRatio . 5) (BoundaryLayerHeight . 128) (BoundaryLayerLevels . 1) (CrossWakeGrowthFactor . 1.1) (DefeaturingSize . 8) (EdgeSelectionList) (FirstHeight . 0.01) (FlipDirection . #f) (FlowDirection . X) (LastRatioPercentage . 20) (MptMethodType . Automatic) (NumberOfLayers . 4) (OffsetMethodType . uniform) (Rate . 1.2) (ShowCoordinates . #t) (WakeGrowthFactor . 2) (WakeLevels . 1) (X . 0) (Y . 0) (Z . 0))
+ CylinderObject : (__map__ (HeightBackInc . 0) (HeightFrontInc . 0) (HeightNode . none) (Node1 . none) (Node2 . none) (Node3 . none) (Options . 3 Arc Nodes) (Radius1 . 0) (Radius2 . 0))
+ VolumeFill : hexcore
+Create new external boundaries.
+
+---------------- A refinement region was added with the size 6
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-167.307 106.699 29.0894) '(0 0 0) '(0.227815 0.280996 -0.0332198) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(12.3886 -9.49899 0.512787) '(0 0 0) '(-0.0870757 -0.12195 0.0336754) 0 0)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(3781.71 1488.02 -1670.02) '(0 0 0) '(0.0549144 0.353531 0.066188) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(2289.42 2715.1 1612.06) '(0 0 0) '(0.058641 -0.0277948 -0.00480753) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-915.536 190.809 503.997) '(0 0 0) '(0.691449 -0.549455 1.4881) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(19.4949 -461.342 -332.644) '(0 0 0) '(-0.10396 -0.0203269 0.120588) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(151.45 -94.7282 -220.288) '(0 0 0) '(0.161005 -0.0559403 -0.26154) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(1572.27 627.874 697.978) '(0 0 0) '(-0.335625 1.13933 -0.272907) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-436.602 -104.378 4.55321) '(0 0 0) '(0.216475 -0.910567 0.530002) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-62.1522 96.8604 71.9116) '(0 0 0) '(-0.00435364 -0.0179056 0.00268334) 0 0)
+S_CreateRefinementRegions:
+ RefinementRegionsName : local-refinement-rear-wheel
+ CreationMethod : Box
+ BOIMaxSize : 6
+ BOISizeName : boi_1
+ SelectionType : label
+ ZoneSelectionList : ()
+ ZoneLocation : ()
+ LabelSelectionList : (rear-msr)
+ ObjectSelectionList : ()
+ ZoneSelectionSingle : ()
+ ObjectSelectionSingle : ()
+ BoundingBoxObject : (__map__ (SizeRelativeLength . Ratio relative to geometry size) (Xmax . -18.186839) (XmaxRatio . 0.1) (Xmin . -42.661008) (XminRatio . 0.1) (Ymax . 70.132285) (YmaxRatio . 1) (Ymin . 7.1322871) (YminRatio . 0.1) (Zmax . 32.314682) (ZmaxRatio . 0.1) (Zmin . -3.6852966) (ZminRatio . 0.1))
+ OffsetObject : (__map__ (AspectRatio . 5) (BoundaryLayerHeight . 24) (BoundaryLayerLevels . 1) (CrossWakeGrowthFactor . 1.1) (DefeaturingSize . 8) (EdgeSelectionList) (FirstHeight . 0.01) (FlipDirection . #f) (FlowDirection . X) (LastRatioPercentage . 20) (MptMethodType . Automatic) (NumberOfLayers . 4) (OffsetMethodType . uniform) (Rate . 1.2) (ShowCoordinates . #t) (WakeGrowthFactor . 2) (WakeLevels . 1) (X . 0) (Y . 0) (Z . 0))
+ CylinderObject : (__map__ (HeightBackInc . 0) (HeightFrontInc . 0) (HeightNode . none) (Node1 . none) (Node2 . none) (Node3 . none) (Options . 3 Arc Nodes) (Radius1 . 0) (Radius2 . 0))
+ VolumeFill : hexcore
+Create new external boundaries.
+
+---------------- A refinement region was added with the size 6
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-28.9631 47.4318 5.01631) '(0 0 0) '(-0.0586529 -0.0428371 0.0530533) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-48.2853 93.7489 -43.2348) '(0 0 0) '(-0.261707 -0.0699722 0.164289) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(139.218 -163.477 67.5058) '(0 0 0) '(0.479495 0.167774 -0.446282) 0 0)
+S_CreateRefinementRegions:
+ RefinementRegionsName : local-refinement-rear-wing
+ CreationMethod : Box
+ BOIMaxSize : 2
+ BOISizeName : boi_1
+ SelectionType : label
+ ZoneSelectionList : ()
+ ZoneLocation : ()
+ LabelSelectionList : (rear-wing)
+ ObjectSelectionList : ()
+ ZoneSelectionSingle : ()
+ ObjectSelectionSingle : ()
+ BoundingBoxObject : (__map__ (SizeRelativeLength . Ratio relative to geometry size) (Xmax . 1.2708616e-12) (XmaxRatio . 0) (Xmin . -49.447809) (XminRatio . 0.5) (Ymax . 87.159014) (YmaxRatio . 1.5) (Ymin . 57.31278) (YminRatio . 0.1) (Zmax . 54.534439) (ZmaxRatio . 1) (Zmin . 52.507626) (ZminRatio . 0.1))
+ OffsetObject : (__map__ (AspectRatio . 5) (BoundaryLayerHeight . 8) (BoundaryLayerLevels . 1) (CrossWakeGrowthFactor . 1.1) (DefeaturingSize . 8) (EdgeSelectionList) (FirstHeight . 0.01) (FlipDirection . #f) (FlowDirection . X) (LastRatioPercentage . 20) (MptMethodType . Automatic) (NumberOfLayers . 4) (OffsetMethodType . uniform) (Rate . 1.2) (ShowCoordinates . #t) (WakeGrowthFactor . 2) (WakeLevels . 1) (X . 0) (Y . 0) (Z . 0))
+ CylinderObject : (__map__ (HeightBackInc . 0) (HeightFrontInc . 0) (HeightNode . none) (Node1 . none) (Node2 . none) (Node3 . none) (Options . 3 Arc Nodes) (Radius1 . 0) (Radius2 . 0))
+ VolumeFill : hexcore
+Create new external boundaries.
+
+---------------- A refinement region was added with the size 2
+(cx-use-window-id 51)
+(cx-set-camera-relative '(8.49435 9.19492 10.5689) '(0 0 0) '(0.00912929 0.184381 -0.0454465) 0 0)
+(cx-use-window-id 51)
+zone id: 4, name: origin-top-wall, type: geometry, count: 2
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-4.56958 -86.8704 -22.6078) '(0 0 0) '(0.0254585 -0.00246085 -0.000323832) 0 0)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-328.516 -907.422 398.603) '(0 0 0) '(0.533619 -0.163292 0.1232) 0 0)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-323.515 -403.189 -253.687) '(0 0 0) '(0.0841234 -0.0623644 0.0194591) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-172.148 -62.3765 7.84084) '(0 0 0) '(-0.0706217 0.130043 -0.0202318) 0 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(dolly-camera 119.462 -0.924408 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-193.392 19.3756 31.9996) '(0 0 0) '(0.00585361 0.105039 -0.014912) 0 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(dolly-camera 84.6134 15.093 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-gui-do cx-activate-item "MenuBar*WriteSubMenu*Mesh...")
+(cx-gui-do cx-set-file-dialog-entries "Select File" '( "V2-UoSM.msh.h5") "CFF Mesh Files (*.msh.h5 )")
+(cx-gui-do cx-activate-item "Question*OK")
+Writing "C:/Users/USER/Documents/Project CES/Anduril F1/Ansys Fluent CFD/CFD - Trail 3 (V2 UoSM)/Export/V2-UoSM.msh.h5" ...
+writing 5 node zones
+writing 25 edge zones 
+writing 16 face zones 
+writing node curvature data...
+done.Copying the required intermediate mesh files into C:\\Users\\USER\\Documents\\Project CES\\Anduril F1\\Ansys Fluent CFD\\CFD - Trail 3 (V2 UoSM)\\Export\\V2-UoSM_workflow_files
+Done.
+(cx-use-window-id 51)
+(cx-set-camera-relative '(30.5637 2.30087 7.506) '(0 0 0) '(0.00236721 0.00021252 0.000573814) 0 0)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-gui-do cx-activate-item "ToolBar*View*projection")
+(cx-gui-do cx-activate-item "MenuBar*PopupMenuProjection*Orthographic Projection")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-1555.24 -1571.18 618.127) '(0 0 0) '(-0.181775 0.346049 -0.0795587) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(583.829 113.207 -146.954) '(0 0 0) '(-0.00102927 -0.12693 0.0379824) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(145.884 19.4175 -256.446) '(0 0 0) '(0.106912 -0.116891 0.0334439) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-56.3121 -28.4019 26.597) '(0 0 0) '(-0.00810024 0.0140693 -0.00220525) 0 0)
+S_CreateRefinementRegions:
+ RefinementRegionsName : local-refinement-nearfield
+ CreationMethod : Box
+ BOIMaxSize : 6
+ BOISizeName : boi_1
+ SelectionType : label
+ ZoneSelectionList : ()
+ ZoneLocation : ()
+ LabelSelectionList : ()
+ ObjectSelectionList : ()
+ ZoneSelectionSingle : ()
+ ObjectSelectionSingle : ()
+ BoundingBoxObject : (__map__ (SizeRelativeLength . Directly specify coordinates) (Xmax . 0) (XmaxRatio . 0.1) (Xmin . -150) (XminRatio . 0.1) (Ymax . 300) (YmaxRatio . 0.1) (Ymin . -175) (YminRatio . 0.1) (Zmax . 150) (ZmaxRatio . 0.1) (Zmin . 0.2) (ZminRatio . 0.1))
+ OffsetObject : (__map__ (AspectRatio . 5) (BoundaryLayerHeight . 24) (BoundaryLayerLevels . 1) (CrossWakeGrowthFactor . 1.1) (DefeaturingSize . 8) (EdgeSelectionList) (FirstHeight . 0.01) (FlipDirection . #f) (FlowDirection . X) (LastRatioPercentage . 20) (MptMethodType . Automatic) (NumberOfLayers . 4) (OffsetMethodType . uniform) (Rate . 1.2) (ShowCoordinates . #t) (WakeGrowthFactor . 2) (WakeLevels . 1) (X . 0) (Y . 0) (Z . 0))
+ CylinderObject : (__map__ (HeightBackInc . 0) (HeightFrontInc . 0) (HeightNode . none) (Node1 . none) (Node2 . none) (Node3 . none) (Options . 3 Arc Nodes) (Radius1 . 0) (Radius2 . 0))
+ VolumeFill : hexcore
+Create new external boundaries.
+
+---------------- A refinement region was added with the size 6
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-674.497 -191.202 77.2654) '(0 0 0) '(-0.00228521 0.0647645 -0.00997651) 0 0)
+S_CreateRefinementRegions:
+ RefinementRegionsName : local-refinement-midfield
+ CreationMethod : Box
+ BOIMaxSize : 24
+ BOISizeName : boi_1
+ SelectionType : label
+ ZoneSelectionList : ()
+ ZoneLocation : ()
+ LabelSelectionList : ()
+ ObjectSelectionList : ()
+ ZoneSelectionSingle : ()
+ ObjectSelectionSingle : ()
+ BoundingBoxObject : (__map__ (SizeRelativeLength . Directly specify coordinates) (Xmax . 0) (XmaxRatio . 0.1) (Xmin . 0) (XminRatio . 0.1) (Ymax . 450) (YmaxRatio . 0.1) (Ymin . -150) (YminRatio . 0.1) (Zmax . 225) (ZmaxRatio . 0.1) (Zmin . 0.2) (ZminRatio . 0.1))
+ OffsetObject : (__map__ (AspectRatio . 5) (BoundaryLayerHeight . 96) (BoundaryLayerLevels . 1) (CrossWakeGrowthFactor . 1.1) (DefeaturingSize . 8) (EdgeSelectionList) (FirstHeight . 0.01) (FlipDirection . #f) (FlowDirection . X) (LastRatioPercentage . 20) (MptMethodType . Automatic) (NumberOfLayers . 4) (OffsetMethodType . uniform) (Rate . 1.2) (ShowCoordinates . #t) (WakeGrowthFactor . 2) (WakeLevels . 1) (X . 0) (Y . 0) (Z . 0))
+ CylinderObject : (__map__ (HeightBackInc . 0) (HeightFrontInc . 0) (HeightNode . none) (Node1 . none) (Node2 . none) (Node3 . none) (Options . 3 Arc Nodes) (Radius1 . 0) (Radius2 . 0))
+ VolumeFill : hexcore
+Create new external boundaries.
+
+Error: All box dimensions must be greater than zero
+Error Object: #f
+
+Error: state/object/execute-command:Exception encountered in S_ExecuteTask: All box dimensions must be greater than zero
+Error Object: ()
+
+Error: state/object/execute-command:Exception encountered in S_AddChildAndUpdate: state/object/execute-command:Exception encountered in S_ExecuteTask: All box dimensions must be greater than zero
+Error Object: ()
+(cx-gui-do cx-activate-item "Error*OK")
+S_CreateRefinementRegions:
+ RefinementRegionsName : local-refinement-midfield
+ CreationMethod : Box
+ BOIMaxSize : 24
+ BOISizeName : local-refinement-midfield
+ SelectionType : label
+ ZoneSelectionList : ()
+ ZoneLocation : ()
+ LabelSelectionList : ()
+ ObjectSelectionList : ()
+ ZoneSelectionSingle : ()
+ ObjectSelectionSingle : ()
+ BoundingBoxObject : (__map__ (SizeRelativeLength . Directly specify coordinates) (Xmax . 0) (XmaxRatio . 0.1) (Xmin . -50) (XminRatio . 0.1) (Ymax . 450) (YmaxRatio . 0.1) (Ymin . -150) (YminRatio . 0.1) (Zmax . 225) (ZmaxRatio . 0.1) (Zmin . 0.2) (ZminRatio . 0.1))
+ OffsetObject : (__map__ (AspectRatio . 5) (BoundaryLayerHeight . 96) (BoundaryLayerLevels . 1) (CrossWakeGrowthFactor . 1.1) (DefeaturingSize . 8) (EdgeSelectionList) (FirstHeight . 0.01) (FlipDirection . #f) (FlowDirection . X) (LastRatioPercentage . 20) (MptMethodType . Automatic) (NumberOfLayers . 4) (OffsetMethodType . uniform) (Rate . 1.2) (ShowCoordinates . #t) (WakeGrowthFactor . 2) (WakeLevels . 1) (X . 0) (Y . 0) (Z . 0))
+ CylinderObject : (__map__ (HeightBackInc . 0) (HeightFrontInc . 0) (HeightNode . none) (Node1 . none) (Node2 . none) (Node3 . none) (Options . 3 Arc Nodes) (Radius1 . 0) (Radius2 . 0))
+ VolumeFill : hexcore
+Create new external boundaries.
+
+---------------- A refinement region was added with the size 24
+
+Error: Failed to update task "Create Local Refinement Regions" as value(s) for below argument(s) are not provided: 
+
+Labels
+
+Error Object: #f
+
+Error: state/object/execute-command:Exception encountered in S_AddChildAndUpdate: Failed to update task "Create Local Refinement Regions" as value(s) for below argument(s) are not provided: 
+
+Labels
+
+Error Object: ()
+(cx-gui-do cx-activate-item "Error*Cancel")
+deleting face-zone local-refinement-midfield (id 97) 
+deleting node-zone boundary-node-99 (id 99) 
+deleting node-zone boundary-node-100 (id 100) 
+removed 8256 faces.
+Deleting local-refinement-midfield-boi
+deleting face-zone local-refinement-nearfield (id 88) 
+deleting node-zone boundary-node-101 (id 101) 
+deleting node-zone boundary-node-102 (id 102) 
+removed 940 faces.
+Deleting local-refinement-nearfield-boi
+deleting face-zone local-refinement-rear-wing (id 79) 
+deleting node-zone boundary-node-103 (id 103) 
+deleting node-zone boundary-node-104 (id 104) 
+removed 46552 faces.
+Deleting local-refinement-rear-wing-boi
+deleting face-zone local-refinement-rear-wheel (id 70) 
+deleting node-zone boundary-node-105 (id 105) 
+deleting node-zone boundary-node-106 (id 106) 
+removed 984 faces.
+Deleting local-refinement-rear-wheel-boi
+deleting face-zone local-refinement-front-wheel (id 61) 
+deleting node-zone boundary-node-107 (id 107) 
+deleting node-zone boundary-node-108 (id 108) 
+removed 792 faces.
+Deleting local-refinement-front-wheel-boi
+(cx-use-window-id 51)
+(cx-set-camera-relative '(484.689 164.808 183.83) '(0 0 0) '(-0.0413329 0.087016 -0.0247693) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-583.422 -24.9707 248.013) '(0 0 0) '(-0.0226031 0.166878 -0.0670698) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(176.736 52.4651 -16.3587) '(0 0 0) '(-0.000871256 -0.0586968 0.0262793) 0 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(dolly-camera 45.0219 -45.7793 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(dolly-camera 59.7543 -48.3182 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-38.428 -30.0609 -13.3675) '(0 0 0) '(-0.00132155 -0.054497 0.0203611) 0 0)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(dolly-camera 0 92.8632 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-279.376 -629.117 117.342) '(0 0 0) '(-0.143466 0.0490641 -0.0115604) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-54.5467 -37.9226 -0.501179) '(0 0 0) '(-0.0132983 0.0203217 -0.00323999) 0 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(dolly-camera 75.7409 -40.2121 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(dolly-camera 41.3674 -21.9528 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-3.54079 -1.17538 2.87431) '(0 0 0) '(0.000235096 0.0400051 -0.00359768) 0 0)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-63.3496 -116.171 20.8508) '(0 0 0) '(0.00934335 0.182749 -0.0168815) 0 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(dolly-camera -69.3722 48.718 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-235.815 -97.2439 -23.524) '(0 0 0) '(0.0297763 -0.0663729 0.00932008) 0 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(dolly-camera 80.7516 -16.2205 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(dolly-camera 90.5915 -16.8698 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(1.13031 0.466003 2.17336) '(0 0 0) '(-0.00736373 0.0245382 -0.00292063) 0 0)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(dolly-camera 0 53.0817 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-361.761 -567.996 20.2666) '(0 0 0) '(-0.0433936 0.0153526 -0.00105947) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-11.877 -2.40982 19.7202) '(0 0 0) '(0.00281567 0.176951 -0.0184444) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-12.71 -2.237 -0.0868988) '(0 0 0) '(0 0 0) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(140.675 37.4678 14.4166) '(0 0 0) '(-0.0133956 0.0457417 -0.0107448) 0 0)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-52.016 -198.516 59.1648) '(0 0 0) '(-0.132967 0.0363436 -0.00954521) 0 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(dolly-camera 42.1907 -80.7003 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-91.2602 -123.098 -18.1692) '(0 0 0) '(0.0213962 -0.012113 0.00300741) 0 0)
+(cx-use-window-id 51)
+zone not found.
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-489.801 -202.462 207.07) '(0 0 0) '(-0.00229622 0.259236 -0.0412592) 0 0)
+(cx-gui-do cx-activate-item "Question*PanelButtons*PushButton1(OK)")
+S_CreateRefinementRegions:
+ RefinementRegionsName : local-refinement-front-wheel
+ CreationMethod : Box
+ BOIMaxSize : 6
+ BOISizeName : local-refinement-front-wheel
+ SelectionType : label
+ ZoneSelectionList : ()
+ ZoneLocation : ()
+ LabelSelectionList : (front-msr)
+ ObjectSelectionList : ()
+ ZoneSelectionSingle : ()
+ ObjectSelectionSingle : ()
+ BoundingBoxObject : (__map__ (SizeRelativeLength . Ratio relative to geometry size) (Xmax . -13.64509) (XmaxRatio . 0.1) (Xmin . -43.073911) (XminRatio . 0.1) (Ymax . -33.014946) (YmaxRatio . 1) (Ymin . -95.976069) (YminRatio . 0.1) (Zmax . 32.314612) (ZmaxRatio . 0.1) (Zmin . -3.6853697) (ZminRatio . 0.1))
+ OffsetObject : (__map__ (AspectRatio . 5) (BoundaryLayerHeight . 128) (BoundaryLayerLevels . 1) (CrossWakeGrowthFactor . 1.1) (DefeaturingSize . 8) (EdgeSelectionList) (FirstHeight . 0.01) (FlipDirection . #f) (FlowDirection . X) (LastRatioPercentage . 20) (MptMethodType . Automatic) (NumberOfLayers . 4) (OffsetMethodType . uniform) (Rate . 1.2) (ShowCoordinates . #t) (WakeGrowthFactor . 2) (WakeLevels . 1) (X . 0) (Y . 0) (Z . 0))
+ CylinderObject : (__map__ (HeightBackInc . 0) (HeightFrontInc . 0) (HeightNode . none) (Node1 . none) (Node2 . none) (Node3 . none) (Options . 3 Arc Nodes) (Radius1 . 0) (Radius2 . 0))
+ VolumeFill : hexcore
+Create new external boundaries.
+
+---------------- A refinement region was added with the size 6
+S_CreateRefinementRegions:
+ RefinementRegionsName : local-refinement-rear-wheel
+ CreationMethod : Box
+ BOIMaxSize : 6
+ BOISizeName : local-refinement-rear-wheel
+ SelectionType : label
+ ZoneSelectionList : ()
+ ZoneLocation : ()
+ LabelSelectionList : (rear-msr)
+ ObjectSelectionList : ()
+ ZoneSelectionSingle : ()
+ ObjectSelectionSingle : ()
+ BoundingBoxObject : (__map__ (SizeRelativeLength . Ratio relative to geometry size) (Xmax . -18.186839) (XmaxRatio . 0.1) (Xmin . -42.661008) (XminRatio . 0.1) (Ymax . 70.132285) (YmaxRatio . 1) (Ymin . 7.1322871) (YminRatio . 0.1) (Zmax . 32.314682) (ZmaxRatio . 0.1) (Zmin . -3.6852966) (ZminRatio . 0.1))
+ OffsetObject : (__map__ (AspectRatio . 5) (BoundaryLayerHeight . 24) (BoundaryLayerLevels . 1) (CrossWakeGrowthFactor . 1.1) (DefeaturingSize . 8) (EdgeSelectionList) (FirstHeight . 0.01) (FlipDirection . #f) (FlowDirection . X) (LastRatioPercentage . 20) (MptMethodType . Automatic) (NumberOfLayers . 4) (OffsetMethodType . uniform) (Rate . 1.2) (ShowCoordinates . #t) (WakeGrowthFactor . 2) (WakeLevels . 1) (X . 0) (Y . 0) (Z . 0))
+ CylinderObject : (__map__ (HeightBackInc . 0) (HeightFrontInc . 0) (HeightNode . none) (Node1 . none) (Node2 . none) (Node3 . none) (Options . 3 Arc Nodes) (Radius1 . 0) (Radius2 . 0))
+ VolumeFill : hexcore
+Create new external boundaries.
+
+---------------- A refinement region was added with the size 6
+S_CreateRefinementRegions:
+ RefinementRegionsName : local-refinement-rear-wing
+ CreationMethod : Box
+ BOIMaxSize : 2
+ BOISizeName : local-refinement-rear-wing
+ SelectionType : label
+ ZoneSelectionList : ()
+ ZoneLocation : ()
+ LabelSelectionList : (rear-wing)
+ ObjectSelectionList : ()
+ ZoneSelectionSingle : ()
+ ObjectSelectionSingle : ()
+ BoundingBoxObject : (__map__ (SizeRelativeLength . Ratio relative to geometry size) (Xmax . 1.2708616e-12) (XmaxRatio . 0) (Xmin . -49.447809) (XminRatio . 0.5) (Ymax . 87.159014) (YmaxRatio . 1.5) (Ymin . 57.31278) (YminRatio . 0.1) (Zmax . 54.534439) (ZmaxRatio . 1) (Zmin . 52.507626) (ZminRatio . 0.1))
+ OffsetObject : (__map__ (AspectRatio . 5) (BoundaryLayerHeight . 8) (BoundaryLayerLevels . 1) (CrossWakeGrowthFactor . 1.1) (DefeaturingSize . 8) (EdgeSelectionList) (FirstHeight . 0.01) (FlipDirection . #f) (FlowDirection . X) (LastRatioPercentage . 20) (MptMethodType . Automatic) (NumberOfLayers . 4) (OffsetMethodType . uniform) (Rate . 1.2) (ShowCoordinates . #t) (WakeGrowthFactor . 2) (WakeLevels . 1) (X . 0) (Y . 0) (Z . 0))
+ CylinderObject : (__map__ (HeightBackInc . 0) (HeightFrontInc . 0) (HeightNode . none) (Node1 . none) (Node2 . none) (Node3 . none) (Options . 3 Arc Nodes) (Radius1 . 0) (Radius2 . 0))
+ VolumeFill : hexcore
+Create new external boundaries.
+
+---------------- A refinement region was added with the size 2
+S_CreateRefinementRegions:
+ RefinementRegionsName : local-refinement-nearfield
+ CreationMethod : Box
+ BOIMaxSize : 12
+ BOISizeName : local-refinement-nearfield
+ SelectionType : label
+ ZoneSelectionList : ()
+ ZoneLocation : ()
+ LabelSelectionList : ()
+ ObjectSelectionList : ()
+ ZoneSelectionSingle : ()
+ ObjectSelectionSingle : ()
+ BoundingBoxObject : (__map__ (SizeRelativeLength . Directly specify coordinates) (Xmax . 0) (XmaxRatio . 0.1) (Xmin . -100) (XminRatio . 0.1) (Ymax . 300) (YmaxRatio . 0.1) (Ymin . -175) (YminRatio . 0.1) (Zmax . 150) (ZmaxRatio . 0.1) (Zmin . 0.2) (ZminRatio . 0.1))
+ OffsetObject : (__map__ (AspectRatio . 5) (BoundaryLayerHeight . 48) (BoundaryLayerLevels . 1) (CrossWakeGrowthFactor . 1.1) (DefeaturingSize . 8) (EdgeSelectionList) (FirstHeight . 0.01) (FlipDirection . #f) (FlowDirection . X) (LastRatioPercentage . 20) (MptMethodType . Automatic) (NumberOfLayers . 4) (OffsetMethodType . uniform) (Rate . 1.2) (ShowCoordinates . #t) (WakeGrowthFactor . 2) (WakeLevels . 1) (X . 0) (Y . 0) (Z . 0))
+ CylinderObject : (__map__ (HeightBackInc . 0) (HeightFrontInc . 0) (HeightNode . none) (Node1 . none) (Node2 . none) (Node3 . none) (Options . 3 Arc Nodes) (Radius1 . 0) (Radius2 . 0))
+ VolumeFill : hexcore
+Create new external boundaries.
+
+---------------- A refinement region was added with the size 12
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-126.362 -52.4849 -145.157) '(0 0 0) '(0.000464745 -0.120571 0.0279081) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(695.845 406.973 226.35) '(0 0 0) '(-0.0830953 0.172078 -0.0585931) 0 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(dolly-camera 70.0015 -88.0455 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(230.354 195.355 -410.8) '(0 0 0) '(0.320129 -0.0714917 0.0352014) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(103.261 453.586 242.141) '(0 0 0) '(-0.282092 0.0735816 -0.0286571) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(48.476 198.932 -381.052) '(0 0 0) '(0.145139 -0.0212176 0.0206682) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-583.427 -1347.11 489.222) '(0 0 0) '(-0.0241089 0.00753111 -0.00317979) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(548.627 1103.44 -811.718) '(0 0 0) '(0.209843 -0.0653471 0.00510132) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-4.21277 275.407 693.921) '(0 0 0) '(-0.365657 0.0237859 -0.0108218) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-904.025 -1459.75 30.4656) '(0 0 0) '(0.152268 0.0168524 0.013676) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(292.884 243.854 -557.208) '(0 0 0) '(0.166227 -0.174822 0.0308939) 0 0)
+S_CreateRefinementRegions:
+ RefinementRegionsName : local-refinement-midfield
+ CreationMethod : Box
+ BOIMaxSize : 24
+ BOISizeName : local-refinement-midfield
+ SelectionType : label
+ ZoneSelectionList : ()
+ ZoneLocation : ()
+ LabelSelectionList : ()
+ ObjectSelectionList : ()
+ ZoneSelectionSingle : ()
+ ObjectSelectionSingle : ()
+ BoundingBoxObject : (__map__ (SizeRelativeLength . Directly specify coordinates) (Xmax . 0) (XmaxRatio . 0.1) (Xmin . -135) (XminRatio . 0.1) (Ymax . 450) (YmaxRatio . 0.1) (Ymin . -250) (YminRatio . 0.1) (Zmax . 200) (ZmaxRatio . 0.1) (Zmin . 0.2) (ZminRatio . 0.1))
+ OffsetObject : (__map__ (AspectRatio . 5) (BoundaryLayerHeight . 96) (BoundaryLayerLevels . 1) (CrossWakeGrowthFactor . 1.1) (DefeaturingSize . 8) (EdgeSelectionList) (FirstHeight . 0.01) (FlipDirection . #f) (FlowDirection . X) (LastRatioPercentage . 20) (MptMethodType . Automatic) (NumberOfLayers . 4) (OffsetMethodType . uniform) (Rate . 1.2) (ShowCoordinates . #t) (WakeGrowthFactor . 2) (WakeLevels . 1) (X . 0) (Y . 0) (Z . 0))
+ CylinderObject : (__map__ (HeightBackInc . 0) (HeightFrontInc . 0) (HeightNode . none) (Node1 . none) (Node2 . none) (Node3 . none) (Options . 3 Arc Nodes) (Radius1 . 0) (Radius2 . 0))
+ VolumeFill : hexcore
+Create new external boundaries.
+
+---------------- A refinement region was added with the size 24
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-277.741 -302.487 255.516) '(0 0 0) '(-0.063478 0.0637087 -0.00405455) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(100.966 127.379 129.624) '(0 0 0) '(-0.0669477 0.0592828 -0.0112645) 0 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(dolly-camera 131.805 -153.673 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(152.465 214.145 36.1797) '(0 0 0) '(-0.0447909 0.0340762 -0.0106106) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(0.726074 -1.09998 -6.07904) '(0 0 0) '(0.0443319 0.0570205 -0.0172735) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-300.963 -295.527 160.577) '(0 0 0) '(0.00491001 0.0456968 -0.0176596) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-1500.12 -698.078 -565.393) '(0 0 0) '(0.15063 -0.315486 0.0628624) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(303.493 22.5203 -67.9224) '(0 0 0) '(0.000484049 -0.00816568 0.000456631) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(1417.97 737.457 -87.0721) '(0 0 0) '(0.0362405 0.140271 -0.0249953) 0 0)
+S_CreateRefinementRegions:
+ RefinementRegionsName : local-refinement-farfield
+ CreationMethod : Box
+ BOIMaxSize : 48
+ BOISizeName : boi_1
+ SelectionType : label
+ ZoneSelectionList : ()
+ ZoneLocation : ()
+ LabelSelectionList : ()
+ ObjectSelectionList : ()
+ ZoneSelectionSingle : ()
+ ObjectSelectionSingle : ()
+ BoundingBoxObject : (__map__ (SizeRelativeLength . Directly specify coordinates) (Xmax . 0) (XmaxRatio . 0.1) (Xmin . -180) (XminRatio . 0.1) (Ymax . 700) (YmaxRatio . 0.1) (Ymin . -300) (YminRatio . 0.1) (Zmax . 250) (ZmaxRatio . 0.1) (Zmin . 0.2) (ZminRatio . 0.1))
+ OffsetObject : (__map__ (AspectRatio . 5) (BoundaryLayerHeight . 128) (BoundaryLayerLevels . 1) (CrossWakeGrowthFactor . 1.1) (DefeaturingSize . 8) (EdgeSelectionList) (FirstHeight . 0.01) (FlipDirection . #f) (FlowDirection . X) (LastRatioPercentage . 20) (MptMethodType . Automatic) (NumberOfLayers . 4) (OffsetMethodType . uniform) (Rate . 1.2) (ShowCoordinates . #t) (WakeGrowthFactor . 2) (WakeLevels . 1) (X . 0) (Y . 0) (Z . 0))
+ CylinderObject : (__map__ (HeightBackInc . 0) (HeightFrontInc . 0) (HeightNode . none) (Node1 . none) (Node2 . none) (Node3 . none) (Options . 3 Arc Nodes) (Radius1 . 0) (Radius2 . 0))
+ VolumeFill : hexcore
+Create new external boundaries.
+
+---------------- A refinement region was added with the size 48
+(cx-gui-do cx-activate-item "MenuBar*WriteSubMenu*Mesh...")
+(cx-gui-do cx-set-file-dialog-entries "Select File" '( "V2-UoSM.msh.h5") "CFF Mesh Files (*.msh.h5 )")
+(cx-gui-do cx-activate-item "Question*OK")
+Writing "C:/Users/USER/Documents/Project CES/Anduril F1/Ansys Fluent CFD/CFD - Trail 3 (V2 UoSM)/Export/V2-UoSM.msh.h5" ...
+writing 8 node zones
+writing 25 edge zones 
+writing 19 face zones 
+writing node curvature data...
+done.Copying the required intermediate mesh files into C:\\Users\\USER\\Documents\\Project CES\\Anduril F1\\Ansys Fluent CFD\\CFD - Trail 3 (V2 UoSM)\\Export\\V2-UoSM_workflow_files
+Done.
+(cx-gui-do cx-activate-item "MenuBar*WriteSubMenu*Boundaries...")
+(cx-gui-do cx-set-list-selections "Write Boundaries*Frame1*List1(Boundary Zones)" '( 15))
+(cx-gui-do cx-activate-item "Write Boundaries*Frame1*List1(Boundary Zones)")
+(cx-gui-do cx-set-list-selections "Write Boundaries*Frame1*List1(Boundary Zones)" '( 15 18))
+(cx-gui-do cx-activate-item "Write Boundaries*Frame1*List1(Boundary Zones)")
+(cx-gui-do cx-activate-item "Write Boundaries*PanelButtons*PushButton1(Close)")
+(cx-gui-do cx-activate-item "MenuBar*WriteSubMenu*Domains...")
+(cx-gui-do cx-set-file-dialog-entries "Select File" '( "domain-test") "Domain Files (*.dom)")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-868.241 -512.857 159.896) '(0 0 0) '(0.0619117 -0.0451776 -0.00567436) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(49.766 22.6249 7.13036) '(0 0 0) '(-0.0192102 0.126604 -0.0244238) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(12.6781 116.011 219.515) '(0 0 0) '(-0.281873 0.382687 -0.186124) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-22.999 -22.2823 -3.14389) '(0 0 0) '(0.0169421 -0.0207049 0.0189221) 0 0)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-60.903 -214.444 77.208) '(0 0 0) '(0.469453 -0.118026 0.0416971) 0 0)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-48.2508 -79.8712 -42.3564) '(0 0 0) '(0.0680461 -0.0441851 0.0101934) 0 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(dolly-camera 64.2418 -79.015 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(dolly-camera 58.2434 -68.9662 0)
+(cx-use-window-id 51)
+(dolly-camera 48.356 -58.3665 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(34.3987 74.2573 -43.6349) '(0 0 0) '(0.29545 0.0663611 -0.0162842) 0 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-120.732 -12429.5 -2099.22) '(0 0 0) '(0.186211 -0.0588678 0.144483) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-5431.52 -1122.98 -1775.42) '(0 0 0) '(-0.0295712 0.180962 -0.0257061) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(1760.26 -133.443 328.485) '(0 0 0) '(-0.00337732 -0.0888718 0.006078) 0 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(dolly-camera -37.951 0.849915 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(dolly-camera -35.3627 1.29385 0)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(dolly-camera -24.6206 0.647797 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(35.3526 5.63751 12.5549) '(0 0 0) '(0.00561124 -0.0485577 0.00422841) 0 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(dolly-camera 8.86562 -2.48795 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-41.4676 -3.74997 5.51199) '(0 0 0) '(-0.052252 0.143974 -0.0469601) 0 0)
+(cx-use-window-id 51)
+zone id: 2, name: origin-inlet, type: geometry, count: 2
+(cx-use-window-id 51)
+(cx-set-camera-relative '(459.703 330.808 -142.658) '(0 0 0) '(0.544912 -0.944994 -0.214343) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-3100.95 -5279.56 1627.96) '(0 0 0) '(-0.572902 0.330989 0.0329527) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-704.647 -228.632 215.433) '(0 0 0) '(-0.255979 0.555731 -0.1465) 0 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(dolly-camera 237.832 -14.2009 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-325.244 -34.7117 -330.816) '(0 0 0) '(-0.00762105 -0.0338179 -0.911824) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(480.488 729.618 -1121.03) '(0 0 0) '(-0.0125723 0.108034 0.0495093) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(1726.56 3457.27 3600.83) '(0 0 0) '(0.842247 0.149795 -0.552713) 0 0)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-43.8333 -147.572 50.8792) '(0 0 0) '(-0.140814 0.0954508 -0.0145739) 0 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(dolly-camera 61.623 -19.9917 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-325.667 -168.007 -28.8009) '(0 0 0) '(0.0236878 0.00189216 0.0029121) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(182.35 20.1152 42.3256) '(0 0 0) '(-0.0261469 0.0401328 -0.0082463) 0 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(dolly-camera 44.2663 -14.2762 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(dolly-camera 82.0106 -25.6285 0)
+(cx-use-window-id 51)
+(dolly-camera 75.6372 -25.239 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(dolly-camera 22.1629 -6.92212 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(191.571 104.533 22.7031) '(0 0 0) '(-0.0114963 0.0119327 -0.00350046) 0 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(dolly-camera 58.771 -50.8282 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(dolly-camera 22.4584 -18.24 0)
+(cx-use-window-id 51)
+(dolly-camera 15.3984 -1.35309 0)
+
+---------------- The Global Min size was adjusted to 0.02488789 
+
+---- Warning--- Note that size controls based on edges cannot be used in a Size Control File
+
+---------------- A curvature angle of 12 was added to the edges of curvature_1
+
+---------------- A curvature angle of 12 was added to  curvature_1
+deleting edge-zone origin-chasis__163 (id 163) 
+deleting edge-zone origin-chasis__164 (id 164) 
+removed 289 nodes.
+Deleting curvature_1_edges
+Deleting curvature_1_faces
+(cx-use-window-id 51)
+(cx-set-camera-relative '(17.6395 7.01379 -38.0325) '(0 0 0) '(0.0440843 -0.104756 0.0162681) 0 0)
+
+---- Warning--- Note that size controls based on edges cannot be used in a Size Control File
+
+---------------- A curvature angle of 12 was added to the edges of curvature_1
+
+---------------- A curvature angle of 12 was added to  curvature_1
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-8.35776 -7.34357 -2.10948) '(0 0 0) '(0.00874116 -0.0048822 0.00114411) 0 0)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(1320.18 -1976.25 556.189) '(0 0 0) '(0.227451 0.206871 0.199395) 0 0)
+(cx-use-window-id 51)
+zone id: 161, name: local-refinement-farfield, type: wall, count: 1796
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+zone id: 161, name: local-refinement-farfield, type: wall, count: 1796
+(cx-gui-do cx-activate-item "ToolBar*Context*isolate")
+(cx-gui-do cx-activate-item "ToolBar*Context*isolate")
+(cx-gui-do cx-activate-item "ToolBar*Context*isolate")
+(cx-gui-do cx-activate-item "ToolBar*Context*undo")
+(cx-gui-do cx-activate-item "ToolBar*Context*undo")
+(cx-gui-do cx-activate-item "ToolBar*Context*isolate")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-690.991 -4085.71 1562.73) '(0 0 0) '(0.355535 0.0803454 0.367225) 0 0)
+(cx-gui-do cx-activate-item "ToolBar*Context*isolate")
+(cx-gui-do cx-activate-item "ToolBar*Context*isolate")
+(cx-gui-do cx-activate-item "ToolBar*Context*hide")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-959.756 -1529.91 -573.378) '(0 0 0) '(0.367112 -0.488307 0.669156) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(1180.63 476.949 -412.431) '(0 0 0) '(-0.129346 0.180254 -0.0829643) 0 0)
+(cx-gui-do cx-activate-item "ToolBar*Context*showall")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-1027.85 -1116.07 -700.644) '(0 0 0) '(0.185961 -0.216327 0.069967) 0 0)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-264.294 -241.093 192.866) '(0 0 0) '(0.829113 -0.559181 0.343892) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(30.4646 -50.6339 -113.152) '(0 0 0) '(-0.0226561 -0.0927712 0.134132) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-30.2739 99.3228 161.71) '(0 0 0) '(-0.02931 0.21071 -0.188451) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-105.348 16.9591 10.804) '(0 0 0) '(0.00912416 -0.149076 0.172985) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(144.933 -112.45 -168.418) '(0 0 0) '(0.0241826 -0.0317497 -0.0149472) 0 0)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(4013.72 1699.99 -1747.71) '(0 0 0) '(-0.00169636 0.341721 0.0601956) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-1523.93 3727.92 7643.16) '(0 0 0) '(0.70545 -0.927254 0.537441) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-6839.59 2957.87 -1474.05) '(0 0 0) '(-0.464298 -0.198688 0.974793) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(1108.29 -1707.03 5373.36) '(0 0 0) '(0.226612 -0.0841744 -0.403049) 0 0)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(614.639 678.5 -1020.96) '(0 0 0) '(-0.453235 0.581443 0.324345) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-1018.24 -793.541 593.882) '(0 0 0) '(0.0284049 -0.226593 -0.157177) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(331.651 154.863 1276.59) '(0 0 0) '(-0.129032 -0.796027 0.126707) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(842.611 507.359 172.881) '(0 0 0) '(0.2156 -0.446392 0.393368) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(583.12 725.469 -976.582) '(0 0 0) '(0.40745 -0.101061 0.179171) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-759.86 1123.49 9.95935) '(0 0 0) '(0.818375 0.549963 -0.00722115) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-111.399 35.4944 32.315) '(0 0 0) '(0.0883529 0.280162 -0.00915478) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(8.418 -217.532 -378.994) '(0 0 0) '(-0.0927862 -0.307782 0.098138) 0 0)
+(cx-gui-do cx-activate-item "ToolBar*Pointer*zoom")
+(cx-use-window-id 51)
+(cx-set-camera '(-16.4011 67.9283 -75.3357) '(-32.535 29.0906 -0.829781) '(0.88313 -0.466286 -0.0518237) 24.1988 24.1988 "orthographic")
+
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-31.0637 44.2131 60.3827) '(0 0 0) '(-0.952934 0.286861 -0.929487) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-11.1966 -1.63889 17.175) '(0 0 0) '(-0.0283479 0.185232 -0.0138637) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(15.816 3.02265 6.12973) '(0 0 0) '(-0.0238838 0.0867522 0.00695312) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-2.92212 -5.13574 -23.4998) '(0 0 0) '(0.0931723 -0.578404 0.114629) 0 0)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(6478.79 -318.789 6484.91) '(0 0 0) '(0.0491419 -0.00138479 0.01885) 0 0)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-set-camera '(1219.94 -86.4751 18.729) '(0.000198364 -86.4751 18.729) '(0 1 6.28643e-09) 345.051 345.051 "orthographic")
+
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-841.086 -840.594 798.828) '(0 0 0) '(0.90736 -0.579806 0.0118362) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(22.125 -0.597382 -13.1842) '(0 0 0) '(-0.102984 0.159392 0.118816) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-37.0624 7.78279 19.638) '(0 0 0) '(0.0341333 -0.123967 0.168227) 0 0)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-set-camera '(855.463 -89.8912 81.1001) '(-90.0006 -89.8912 81.1001) '(7.45058e-09 1 1.3184e-08) 267.417 267.417 "orthographic")
+
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-213.57 -181.356 94.2513) '(0 0 0) '(0.669441 -0.683816 0.672229) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(10.9304 -21.6955 -69.3431) '(0 0 0) '(0.0027445 -0.219703 0.0618526) 0 0)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+zone id: 2, name: origin-inlet, type: geometry, count: 2
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(60.7093 24.8612 28.8278) '(0 0 0) '(-0.0475928 0.191705 -0.0436029) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-6452.53 3086.24 1386.24) '(0 0 0) '(-0.162313 -0.854614 1.12921) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(7005.12 -3089.53 -2825.94) '(0 0 0) '(0.171381 1.22374 -0.938425) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(589.187 787.553 -1769.45) '(0 0 0) '(-0.235229 0.246855 0.0256089) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(567.571 547.631 2252.53) '(0 0 0) '(0.0719241 -0.0527636 -0.00227737) 0 0)
+(cx-use-window-id 51)
+zone id: 7, name: origin-symmetry, type: geometry, count: 419
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+zone id: 7, name: origin-symmetry, type: geometry, count: 419
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+zone id: 7, name: origin-symmetry, type: geometry, count: 419
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+zone id: 7, name: origin-symmetry, type: geometry, count: 419
+(cx-gui-do cx-activate-item "ToolBar*Context*hide")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-276.885 6521.59 167.173) '(0 0 0) '(-0.752899 -0.13112 -0.310362) 0 0)
+(cx-use-window-id 51)
+zone id: 161, name: local-refinement-farfield, type: wall, count: 1796
+(cx-gui-do cx-activate-item "ToolBar*Context*hide")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-105.045 -29.8355 205.986) '(0 0 0) '(0.273634 0.198626 0.146348) 0 0)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-141.725 -350.036 382.066) '(0 0 0) '(0.34392 -0.0635414 0.0690584) 0 0)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-set-camera '(979.648 -39.1151 49.1747) '(-335.974 -39.1151 49.1747) '(7.45058e-09 1 -3.84171e-09) 372.114 372.114 "orthographic")
+
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-322.644 -400.122 764.696) '(0 0 0) '(0.31245 -0.0542537 0.0891296) 0 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(dolly-camera 165.024 14.1341 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-561.24 -161.622 343.866) '(0 0 0) '(0.133905 -0.0895049 0.170919) 0 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(dolly-camera 53.4862 -119.201 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+deleting edge-zone origin-chasis__166 (id 166) 
+deleting edge-zone origin-chasis__167 (id 167) 
+removed 281 nodes.
+Deleting curvature_1_edges
+Deleting curvature_1_faces
+
+---- Warning--- Note that size controls based on edges cannot be used in a Size Control File
+
+---------------- A curvature angle of 12 was added to the edges of curvature_chasis
+
+---------------- A curvature angle of 12 was added to  curvature_chasis
+(cx-use-window-id 51)
+zone id: 8, name: origin-front-wing, type: geometry, count: 16169
+(cx-use-window-id 51)
+zone id: 13, name: origin-rear-wing, type: geometry, count: 105
+
+---- Warning--- Note that size controls based on edges cannot be used in a Size Control File
+
+---------------- A curvature angle of 9 was added to the edges of curvature_aero
+
+---------------- A curvature angle of 9 was added to  curvature_aero
+(cx-use-window-id 51)
+(cx-set-camera-relative '(426.384 26.2896 -551.826) '(0 0 0) '(-0.109853 0.00982916 0.10968) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-117.296 383.108 405.79) '(0 0 0) '(-0.57703 0.101727 -0.29537) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(193.001 -611.377 -397.899) '(0 0 0) '(0.160896 -0.272065 0.639533) 0 0)
+(cx-use-window-id 51)
+zone id: 7, name: origin-symmetry, type: geometry, count: 419
+(cx-use-window-id 51)
+(handle-key "control [")
+/bo mo deselect-last
+
+> (cx-use-window-id 51)
+(cx-set-camera-relative '(-84.9202 -137.717 8.13023) '(0 0 0) '(0.13363 -0.131533 0.11) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-55.3225 -6.77352 -4.06726) '(0 0 0) '(0.0162439 -0.248107 0.122253) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(11.2336 0.690094 0.207092) '(0 0 0) '(-0.0359445 0.198538 -0.0893905) 0 0)
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+(cx-set-camera '(667.742 -28.9666 25.4947) '(-2.02962 -28.9666 25.4947) '(0 1 -8.49832e-09) 189.44 189.44 "orthographic")
+
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-0.498688 9.46681 -3.94074) '(0 0 0) '(-0.089849 -0.00405717 -0.00550589) 0 0)
+(cx-use-window-id 51)
+(cx-gui-do cx-activate-item "ToolBar*View*autoscale")
+(cx-use-window-id 51)
+(cx-set-camera '(15655 -12.3277 36.9256) '(0.00120544 -12.3277 36.9256) '(0 1 1.04774e-08) 5599.42 2803.37 "orthographic")
+
+(cx-use-window-id 51)
+(cx-set-camera '(731.229 -21.4711 31.4392) '(-3.55394 -21.4711 31.4392) '(5.82077e-11 1 5.7288e-08) 262.815 131.579 "orthographic")
+
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-2.06759 -3.98442 17.3048) '(0 0 0) '(0.0603185 -0.00234544 -0.0324872) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-35.9767 -22.4099 82.7975) '(0 0 0) '(0.0907809 -0.00913608 0.0356035) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-43.2406 -12.0507 51.6421) '(0 0 0) '(0.0511446 -0.010101 0.0393954) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(76.7738 19.0974 -129.465) '(0 0 0) '(-0.0913606 0.0153984 -0.049345) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-369.388 -26.7276 331.802) '(0 0 0) '(0.3846 -0.128127 0.0782301) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-22.239 7.896 1.8333) '(0 0 0) '(0.00178224 -0.00532597 0.0405047) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(58.3756 -44.0323 -6.10303) '(0 0 0) '(0.0143955 -0.0114621 0.0207422) 0 0)
+(cx-gui-do cx-activate-item "ToolBar*Context*isolate")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-134.036 -72.947 -22.0537) '(0 0 0) '(-0.00574315 -0.0458494 0.182288) 0 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(dolly-camera -44.1201 49.4287 0)
+(cx-use-window-id 51)
+(handle-key "control ??")
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-34.366 27.7757 2.94727) '(0 0 0) '(0.00220811 0.00162029 -0.00778568) 0 0)
+(cx-use-window-id 51)
+(cx-set-camera-relative '(62.9672 33.4807 16.1733) '(0 0 0) '(0.0162931 0.0177909 -0.08676) 0 0)
+
+---------------- A curvature angle of 18 was added to  curvature_wheels
+(cx-gui-do cx-activate-item "MenuBar*WriteSubMenu*Mesh...")
+(cx-gui-do cx-set-file-dialog-entries "Select File" '( "V2-UoSM.msh.h5") "CFF Mesh Files (*.msh.h5 )")
+(cx-gui-do cx-activate-item "Question*OK")
+Writing "C:/Users/USER/Documents/Project CES/Anduril F1/Ansys Fluent CFD/CFD - Trail 3 (V2 UoSM)/Export/V2-UoSM.msh.h5" ...
+writing 10 node zones
+writing 31 edge zones 
+writing 19 face zones 
+writing node curvature data...
+done.Copying the required intermediate mesh files into C:\\Users\\USER\\Documents\\Project CES\\Anduril F1\\Ansys Fluent CFD\\CFD - Trail 3 (V2 UoSM)\\Export\\V2-UoSM_workflow_files
+Done.
+(cx-use-window-id 51)
+zone not found.
+(cx-use-window-id 51)
+(cx-set-camera-relative '(-116.493 -196.692 -63.7971) '(0 0 0) '(0.00252169 -0.0322376 0.0925191) 0 0)
+(cx-use-window-id 51)
+zone not found.
+Writing "C:\Users\USER\Documents\Project CES\Anduril F1\Ansys Fluent CFD\CFD - Trail 3 (V2 UoSM)\Export\FM_StarForge-FS_19140\TaskObject3.msh.h5" ...
+writing 10 node zones
+writing 31 edge zones 
+writing 19 face zones 
+writing node curvature data...
+done.    processing size functions/scoped sizing to create Size Field...
+
+Writing "C:\Users\USER\Documents\Project CES\Anduril F1\Ansys Fluent CFD\CFD - Trail 3 (V2 UoSM)\Export\FM_StarForge-FS_19140\V2-UoSM.sf"...
+Writing "C:\Users\USER\Documents\Project CES\Anduril F1\Ansys Fluent CFD\CFD - Trail 3 (V2 UoSM)\Export\FM_StarForge-FS_19140\V2-UoSM.sf"...
+Done.
+
+
+Importing one mesh object per program-controlled and one zone per body ...
+    C:\\Program Files\\ANSYS Inc\\ANSYS Student\\v241\\commonfiles\\CPython\\3_10\\winx64\\Release\\python\\..\\Ansys\\TGrid\\CADReaders.py started by USER on StarForge-FS winx64 on Wed Jun 26 19:40:17 2024
+    using Python 3.10.9 (remotes/origin/4e018266dafe29ec2836492d71d245fcfd366d07-dirty:4e018266, Jan  3 2) [MSC v.1920 64 bit (AMD64)]
+    
+    using Ansys.Meshing.FieldMesher build Nov 27 2023 11:54:13
+    
+    running ANSYS TGrid CADToTGridConverter ...
+    setting up parameters ...
+    setting up parameters done.
+    running conversion ...
+    converting 1 file(s) from Workbench to FLTG using output path 'C:\\Users\\USER\\Documents\\Project CES\\Anduril F1\\Ansys Fluent CFD\\CFD - Trail 3 (V2 UoSM)\\Export\\FM_StarForge-FS_19140/out171940201519140.tgf'
+    converting file 'V2-UoSM.pmdb' (1 of 1) from Workbench to FLTG using output path 'C:\\Users\\USER\\Documents\\Project CES\\Anduril F1\\Ansys Fluent CFD\\CFD - Trail 3 (V2 UoSM)\\Export\\FM_StarForge-FS_19140'
+    importing data ...
+    importing meshing model from PartMgr from file 'C:/Users/USER/Documents/Project CES/Anduril F1/Ansys Fluent CFD/CFD - Trail 3 (V2 UoSM)/Export/V2-UoSM.pmdb' ...
+    setting enclosure and symmetry processing to False
+    setting transfer named selections to True
+    setting named selection prefixes to ''
+    setting mixed import resolution type to 'SolidAndSurface'
+    setting target application to 'FluentMeshing'
+    initializing part manager from file ...
+    processing assembly 'C:\\Users\\USER\\Documents\\Project CES\\Anduril F1\\Ansys Fluent CFD\\CFD - Trail 3 (V2 UoSM)\\Discovery_File.dsco' with ID 1 and reference key '<?xml version="1.0" encoding="utf-16"?>
+    <IdTable xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <Table>
+        <Entry>
+          <AssemblyVersionInfo>
+            <AssemblySavedVersion>2147483647</AssemblySavedVersion>
+            <AssemblySavedBuildDate>2147483647</AssemblySavedBuildDate>
+            <MigrateToCompressedLabelIsDisabled>false</MigrateToCompressedLabelIsDisabled>
+          </AssemblyVersionInfo>
+          <Text>~sE839a2bf3-ffdd-42f7-b4a1-b7d32417d515.2_#</Text>
+          <Id>10000</Id>
+          <IsExploded>false</IsExploded>
+        </Entry>
+      </Table>
+      <AssemblyVersionInfo>
+        <AssemblySavedVersion>2147483647</AssemblySavedVersion>
+        <AssemblySavedBuildDate>2147483647</AssemblySavedBuildDate>
+        <MigrateToCompressedLabelIsDisabled>false</MigrateToCompressedLabelIsDisabled>
+      </AssemblyVersionInfo>
+    </IdTable>'
+    length unit = [m]
+    processing part 'Discovery_File' with ID 3
+    processing named selection 'Inlet'
+    processing named selection 'Outlet'
+    processing named selection 'Top wall'
+    processing named selection 'Side wall'
+    processing named selection 'Ground'
+    processing named selection 'Symmetry'
+    processing named selection 'Front Wing'
+    processing named selection 'Front Wheel Patch'
+    processing named selection 'Rear Wheel Patch'
+    processing named selection 'Front MSR'
+    processing named selection 'Rear MSR'
+    processing named selection 'Rear Wing'
+    processing named selection 'Chasis'
+    processing data ...
+    loading size function background grid from file 'C:\\Users\\USER\\Documents\\Project CES\\Anduril F1\\Ansys Fluent CFD\\CFD - Trail 3 (V2 UoSM)\\Export\\FM_StarForge-FS_19140\\\\V2-UoSM.sf' ...
+    reading size function background grid file 'C:\\Users\\USER\\Documents\\Project CES\\Anduril F1\\Ansys Fluent CFD\\CFD - Trail 3 (V2 UoSM)\\Export\\FM_StarForge-FS_19140\\\\V2-UoSM.sf' ...
+     Read 454580 vertices
+    initializing size function background grid done in 0.281 [s]
+    tessellating 240 faces done in 24.815 [s]
+    removing named collections of entities ...
+    removing named collections of entities stopped, no named collections selected.
+    analyzing feature edges ...
+    detecting feature edges, feature angle = 40 [deg] ...
+        Data information
+            Meshing model
+                Attributes:
+                    'LengthUnit': '[mm]'
+                Entity summary:
+                    Collection: 13
+                    Component : 2
+                    Body      : 1
+                    Shell     : 2
+                    Face      : 240
+                    Loop      : 261
+                    Edge      : 613
+                    Vertex    : 388
+                    Surface   : 240
+                    Curve     : 613
+                Tessellation summary:
+                    Face facets  : 244554
+                    Edge segments: 10366
+                Bounding box:
+                    (-335.9761047363281, -516.7127685546875, -0.8299999833106995) x (8.715007425053045e-05, 2031.8076171875, 348.9836120605469)
+                Assembly component hierarchy:
+                    'C:\\Users\\USER\\Documents\\Project CES\\Anduril F1\\Ansys Fluent CFD\\CFD - Trail 3 (V2 UoSM)\\Discovery_File.dsco'
+                      'Discovery_File'
+                NamedCollections:
+                    'Inlet'
+                    'Outlet'
+                    'Top wall'
+                    'Side wall'
+                    'Ground'
+                    'Symmetry'
+                    'Front Wing'
+                    'Front Wheel Patch'
+                    'Rear Wheel Patch'
+                    'Front MSR'
+                    'Rear MSR'
+                    'Rear Wing'
+                    'Chasis'
+    
+    
+    exporting FLTG data to file 'C:\\Users\\USER\\Documents\\Project CES\\Anduril F1\\Ansys Fluent CFD\\CFD - Trail 3 (V2 UoSM)\\Export\\FM_StarForge-FS_19140\\out171940201519140.tgf' ...
+    writing face-based mesh file 'C:\\Users\\USER\\Documents\\Project CES\\Anduril F1\\Ansys Fluent CFD\\CFD - Trail 3 (V2 UoSM)\\Export\\FM_StarForge-FS_19140\\out171940201519140.tgf' ...
+    ======== Exported Data ========
+    Entity summary:
+        Object       : 1
+        Object region: 14
+        Zone         : 38
+    
+    running conversion done.
+    running ANSYS TGrid CADToTGridConverter done.
+    ran ANSYS TGrid CADToTGridConverter in 26.548 [s]
+        ======== Command Execution Log Manager ========
+        Number of execution logs: 0
+    
+
+Reading "C:\Users\USER\Documents\Project CES\Anduril F1\Ansys Fluent CFD\CFD - Trail 3 (V2 UoSM)\Export\FM_StarForge-FS_19140/out171940201519140.tgf"...
+Reading "C:\Users\USER\Documents\Project CES\Anduril F1\Ansys Fluent CFD\CFD - Trail 3 (V2 UoSM)\Export\FM_StarForge-FS_19140/out171940201519140.tgf"...
+nodes: 125807
+edges: 3542
+faces: 244554
+cells: 0
+reading 125807 storage data (id 1, type 41, double precision binary).
+appending mesh...
+done.
+generating pointers...done.
+extracting boundary entities...
+ 169831 boundary nodes.
+ 327938 boundary faces.
+ 32 boundary face zones.
+done.
+
+Reading "C:\Users\USER\Documents\Project CES\Anduril F1\Ansys Fluent CFD\CFD - Trail 3 (V2 UoSM)\Export\FM_StarForge-FS_19140\\V2-UoSM.sf"...
+Reading "C:\Users\USER\Documents\Project CES\Anduril F1\Ansys Fluent CFD\CFD - Trail 3 (V2 UoSM)\Export\FM_StarForge-FS_19140\\V2-UoSM.sf"...
+ Read 454580 vertices
+1260 faces marked.
+
+---- Warning--- Failed Share Topology in DM/SCDM, Attempting to repair model .... 
+
+Error: The model contains self-intersections which could not be automatically repaired. Use the Diagnostics tools to find the location of the problem
+Error Object: #f
+
+Error: state/object/execute-command:Exception encountered in S_ExecuteTask: The model contains self-intersections which could not be automatically repaired. Use the Diagnostics tools to find the location of the problem
+Error Object: ()
+(cx-use-window-id 51)
+zone id: 12, name: origin-rear-msr, type: geometry, count: 1404
+(cx-use-window-id 51)
+(cx-use-window-id 51)
+zone id: 12, name: origin-rear-msr, type: geometry, count: 1404
+(cx-gui-do cx-activate-item "ToolBar*View*autoscale")
+(cx-gui-do cx-activate-item "ToolBar*Mesh Display*fl_mesh_svg_graphics_toolbar")
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 1)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 2)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 3)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 4)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 5)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 0)
+(cx-gui-do cx-activate-tab-index "Display Grid*Frame1" 2)
+(cx-gui-do cx-activate-item "Display Grid*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-activate-item "MenuBar*WriteSubMenu*Mesh...")
+(cx-gui-do cx-set-file-dialog-entries "Select File" '( "V2-UoSM.msh.h5") "CFF Mesh Files (*.msh.h5 )")
+(cx-gui-do cx-activate-item "Question*OK")
+Writing "C:/Users/USER/Documents/Project CES/Anduril F1/Ansys Fluent CFD/CFD - Trail 3 (V2 UoSM)/Export/V2-UoSM.msh.h5" ...
+writing 11 node zones
+writing 56 edge zones 
+writing 32 face zones 
+writing node curvature data...
+done.Copying the required intermediate mesh files into C:\\Users\\USER\\Documents\\Project CES\\Anduril F1\\Ansys Fluent CFD\\CFD - Trail 3 (V2 UoSM)\\Export\\V2-UoSM_workflow_files
+Done.
+(cx-use-window-id 51)
+zone not found.
+/exit y
+Auto-Transcript Stop Time:  20:51:15, 26 Jun 2024 Malay Peninsula Standard Time 
+Total Transcript Time: 2 Hour 26 Minute 0 Second.
