@@ -1,0 +1,10 @@
+*.trn
+*.bat
+*.dom
+*.log
+
+FSAE_Solution_Initial.cas.h5
+FSAE_Solution_Initial.dat.h5
+drag-force-rfile.out
+hypothesis - V2 UoRM.cas.h5
+life-force-rfile.out
